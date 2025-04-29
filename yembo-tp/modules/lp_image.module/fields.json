@@ -1,0 +1,48 @@
+[ {
+  "id" : "0bbdccc6-2500-4965-0deb-53a639190de8",
+  "name" : "image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.lumiglobal.com/hubfs/email/2024_tp/alexandre-pellaes-6vAjp0pscX0-unsplash.png",
+    "alt" : "eguide-image",
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "e7ae0bc0-e6e7-cd9e-31de-51a56605af79",
+  "name" : "show_tag",
+  "label" : "Show caption",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "8ce7500f-04f5-ca3e-99a8-1b716349d348",
+  "name" : "tag_text",
+  "label" : "Caption Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "e7ae0bc0-e6e7-cd9e-31de-51a56605af79",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Image caption: Lorem ipsum dolor sit amet consetetur"
+} ]

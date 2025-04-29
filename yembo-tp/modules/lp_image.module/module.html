@@ -1,0 +1,17 @@
+<div class="lpImage">
+  <div class="lpImage__image">
+
+    {% if module.image.src %}
+    {% set loadingAttr = module.image.loading != 'disabled' ? 'loading="{{ module.image.loading }}"' : '' %}
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt }}" {{ loadingAttr }}>
+    {% endif %}
+    
+  </div>
+
+  {% if module.show_tag %}
+  <div class="lpImage__tag">
+    <p>{{ module.tag_text }}</p>
+  </div>
+  {% endif %}
+
+</div>

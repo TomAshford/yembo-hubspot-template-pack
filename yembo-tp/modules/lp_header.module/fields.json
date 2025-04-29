@@ -1,0 +1,32 @@
+[ {
+  "id" : "0bbdccc6-2500-4965-0deb-53a639190de8",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://go.lumiglobal.com/hubfs/lumi-global-logo-dark.svg",
+    "alt" : "lumi-global-logo-dark",
+    "loading" : "eager"
+  }
+}, {
+  "id" : "logo_url",
+  "name" : "logo_url",
+  "label" : "Logo URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "content_id" : null,
+    "href" : "https://www.lumiglobal.com/",
+    "type" : "EXTERNAL"
+  }
+} ]

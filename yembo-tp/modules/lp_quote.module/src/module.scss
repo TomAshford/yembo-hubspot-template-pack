@@ -1,0 +1,56 @@
+@import "website/assets/src/scss/config.scss";
+
+.lpQuote {
+    position:relative;
+    padding:80px 0;
+    max-width:100%;
+    text-align:center;
+    background-repeat:no-repeat;
+    background-position:100% 50%;
+    background-size:cover;
+    background-color:rgba(8, 17, 38, 1.0);
+    @include media-breakpoint-up-lg {
+        text-align:left;
+    }
+    &__inner {
+        max-width: 850px;
+        @include media-breakpoint-up-lg {
+            padding-right: 76px;
+        }
+    }
+    &__quotation {
+        padding:0;
+        color:var(--white);
+        margin-bottom:52px;
+        blockquote {
+            margin:0;
+        }
+    }
+    &__source {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction:column;
+        @include media-breakpoint-up-sm {
+            flex-direction:row;
+        }
+        @include media-breakpoint-up-lg {
+            justify-content: flex-start;
+        }
+        img {
+            margin-right:25px;
+            max-width:74px;
+            max-height:74px;
+            height:auto;
+            width:auto;
+            margin-bottom:40px;
+            @include media-breakpoint-up-sm {
+                margin-bottom:0;
+            }
+        }
+        p {
+            margin:0;
+            color:var(--white);
+        }
+    }
+}

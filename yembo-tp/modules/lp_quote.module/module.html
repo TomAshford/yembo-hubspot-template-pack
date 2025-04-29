@@ -1,0 +1,23 @@
+<!-- quote -->
+
+<div class="lpQuote"{% if module.quote.quote_background_override.src %} style="background-image:url('{{ module.quote.quote_background_override.src }}')"{% endif %}>
+  <div class="lpQuote__container container">
+    <div class="lpQuote__inner">
+      <div class="lpQuote__quotation">
+        {{ module.quote.quote }}
+      </div>
+      {% if module.quote.logo.src || module.quote.quote_source %}
+      <div class="lpQuote__source">
+        {% if module.quote.logo.src %}
+        <img class="lpQuote__logo" src="{{ module.quote.logo.src }}" alt="{{ module.quote.logo.alt }}">
+        {% endif %}
+        {% if module.quote.quote_source %}
+        <div class="lpQuote__source__info">
+          {{ module.quote.quote_source }}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

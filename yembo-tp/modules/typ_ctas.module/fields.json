@@ -1,0 +1,172 @@
+[ {
+  "id" : "f64e8e95-2105-7dd2-b00f-b0bd72ed70f3",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "Text",
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>More resources</h2>"
+}, {
+  "id" : "f64e5e32-2105-4dd2-b00f-b0cd52ee70f3",
+  "name" : "button_text",
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Learn more",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Browse all insights"
+}, {
+  "id" : "content_url_top",
+  "name" : "content_url",
+  "label" : "Content URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "9f019886-7e97-da89-e919-8d8a7c5c3bcc",
+  "name" : "resource_card",
+  "label" : "Resource Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "f64e8e55-2105-5dd2-b00f-b0cd52ee70f3",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "0bbdccc6-2500-4365-0deb-54a639190de8",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : "resource-post-insert-placeholder",
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "f64e8e55-1105-5dd1-b00f-b0cd52ee70f3",
+    "name" : "tag_name",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Insights",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Insights"
+  }, {
+    "id" : "f64e8e55-2105-5dd2-b00f-b0cd52ee70f3",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+  }, {
+    "id" : "f64e5e55-2105-4dd2-b00f-b0cd52ee70f3",
+    "name" : "button_text",
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Learn more",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Learn more"
+  }, {
+    "id" : "content_url",
+    "name" : "content_url",
+    "label" : "Content URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : "resource-post-insert-placeholder",
+      "loading" : "lazy"
+    },
+    "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "Insights",
+    "button_text" : "Learn more",
+    "content_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : "resource-post-insert-placeholder",
+      "loading" : "lazy"
+    },
+    "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "Market commentary",
+    "button_text" : "Learn more",
+    "content_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : "resource-post-insert-placeholder",
+      "loading" : "lazy"
+    },
+    "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "Research",
+    "button_text" : "Learn more",
+    "content_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ]
+} ]

@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="container-fluid">
+    <div class="row header__row align-items-center justify-content-between">
+
+      <div class="col-12 col-xl-2">
+        <div class="header__brand">
+          {% if module.logo_url.href %}<a href="{{ module.logo_url.href }}" target="_blank">{% endif %}
+            <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" />
+          {% if module.logo_url.href %}</a>{% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,57 @@
+@import "website/assets/src/scss/config.scss";
+
+.lpImage{
+  overflow: hidden;
+  margin-bottom:36px;
+  position:relative;
+
+  &--mobHide {
+    @media(max-width:768px) {
+      margin:0;
+      display:none;
+    }
+  }
+
+  &__tag {
+    margin:20px 0 0;
+    p {
+      font-size:0.875rem;
+      line-height:1.25rem;
+      margin:0;
+      color:#A7A6A8;
+    }
+  }
+
+  &__image {
+    margin:0;
+    position:relative;
+    img {
+      max-width:100%;
+      width:100%;
+      height:auto;
+    }
+    &__slide {
+      padding-right:60px;
+      img {
+        margin:0 0 20px;
+      }
+    }
+    .slick-prev {
+      display:none!important;
+    }
+  }
+
+  &__next {
+    position:absolute;
+    width:20px;
+    height:17px;
+    right:0;
+    top:42%;
+    transform:translateY(-50%) rotate(-90deg);
+    cursor:pointer;
+    &.noTag {
+      top:45%;
+    }
+  }
+
+}

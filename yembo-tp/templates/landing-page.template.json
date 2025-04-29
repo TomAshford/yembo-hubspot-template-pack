@@ -1,0 +1,409 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "lpTemplate",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_169029043254536",
+        "label" : "lp-header",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/website/modules/lp_header",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "lp_header",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_169029149951839",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "lpTemplate__flex",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : "<main class=\"lpTemplate__inner container\">{{ html }}</main>"
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_169029149705031",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "lpTemplate__left",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1690291601170113",
+                "label" : "Module group",
+                "type" : "widget_container",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : false,
+                  "per_widget_wrapper_html" : "",
+                  "wrapping_html" : "<section class=\"landingPage panel--left\">{{ html }}</section>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_169029149357826",
+                  "label" : "lp_text",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "content_type" : "Whitepaper",
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "overrideable" : true,
+                    "path" : "/website/modules/lp_text",
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "text" : "<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>",
+                    "widget_name" : "lp_text",
+                    "wrapping_html" : ""
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                }, {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_169029568155720",
+                  "label" : "lp_image",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "image" : {
+                      "alt" : "lp-placeholder",
+                      "loading" : "lazy",
+                      "size_type" : "auto",
+                      "src" : "https://www.lumiglobal.com/hubfs/email/2024_tp/alexandre-pellaes-6vAjp0pscX0-unsplash.png"
+                    },
+                    "overrideable" : true,
+                    "path" : "/website/modules/lp_image",
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "widget_name" : "lp_image",
+                    "wrapping_html" : ""
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                }, {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_169029569195944",
+                  "label" : "lp_text",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "content_type" : "",
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "overrideable" : true,
+                    "path" : "/website/modules/lp_text",
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex quam, sagittis vitae dolor quis, accumsan consectetur mauris. Aenean interdum semper porttitor. Quisque sed varius mauris, non suscipit urna.</p>\n<ul>\n<li>Morbi eleifend velit quis ligula euismod, eu ultricies turpis lobortis.</li>\n<li>Mauris dapibus, justo fringilla vehicula sollicitudin</li>\n<li>Urna felis sollicitudin orci, a dignissim tellus sem in sem.</li>\n</ul>\n<p>Aliquam aliquet mollis ultrices. Sed pellentesque est ornare ex faucibus ultrices. Etiam dapibus ligula sed nisi vestibulum, ut dignissim nunc ultrices. Duis maximus diam quis lorem rutrum luctus.</p>",
+                    "widget_name" : "lp_text",
+                    "wrapping_html" : ""
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                } ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "lpTemplate__left",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        }, {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1690291651582172",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "lpTemplate__right",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_1690291646519167",
+                "label" : "lp_form",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "overrideable" : true,
+                  "path" : "/website/modules/lp_form",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "lp_form",
+                  "wrapping_html" : "<section class=\"landingPage panel--right\">{{ html }}</section>"
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "lpTemplate__right",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "lpTemplate__flex",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_169139865948047",
+        "label" : "Module group",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "lpTemplate__bottom",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_174317547586998",
+            "label" : "Module group",
+            "type" : "widget_container",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : "",
+              "overrideable" : false
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_1690295858625133",
+              "label" : "lp_quote",
+              "type" : "custom_widget",
+              "params" : {
+                "css_class" : "",
+                "css_id" : "",
+                "css_id_str" : "",
+                "css_style" : "",
+                "overrideable" : true,
+                "path" : "/website/modules/lp_quote",
+                "per_widget_wrapper_html" : "",
+                "schema_version" : 2,
+                "widget_name" : "lp_quote",
+                "wrapping_html" : ""
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "lpTemplate__bottom",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_169029066733430",
+        "label" : "lp-footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/website/modules/lp_footer",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "lp_footer",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

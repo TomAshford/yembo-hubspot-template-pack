@@ -1,0 +1,107 @@
+@import "website/assets/src/scss/config.scss";
+
+.typHero{
+  overflow: hidden;
+  background-color:var(--brand-primary);
+  padding:170px 0 120px;
+  position:relative;
+  @include media-breakpoint-up-lg {
+    padding:170px 0 190px;
+  }
+  /* image & overlay
+  ============================================================================= */
+
+  &__bg-img{
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  &__overlay{
+    background-color:rgba(0,0,0,0.6)
+  }
+
+  .container {
+    position:relative;
+    z-index:1;
+  }
+
+  &__left {
+    position:relative;
+  }
+
+  &__text {
+    margin-bottom:43px;
+    text-align:center;
+    @include media-breakpoint-up-lg {
+      text-align:left;
+    }
+    h1, h2 {
+      color:var(--white);
+      margin-bottom:20px;
+      line-height:1.2em;
+      @include media-breakpoint-up-lg {
+        line-height:1.2em;
+      }
+      em {
+        color:var(--brand-secondary);
+      }
+    }
+    p {
+      line-height:1.5em;
+      color:var(--white);
+      margin-bottom:30px;
+      font-weight:var(--fw-normal);
+      @include media-breakpoint-up-lg {
+        max-width:543px;
+      }
+      &:last-child {
+        margin-bottom:0;
+      }
+    }
+    ul {
+      padding-left:20px;
+      margin-bottom:20px;
+      @include media-breakpoint-up-lg {
+        padding-left:40px;
+      }
+      &:last-child {
+        margin-bottom:0;
+      }
+      li {
+        font-size:1.375rem;
+        line-height:1.2em;
+        color:var(--white);
+        margin-bottom:20px;
+      }
+    }
+  }
+
+  &__buttons {
+    @include flex-align($justify: center, $align:center);
+    width:100%;
+    @include media-breakpoint-up-lg {
+      @include flex-align($justify: flex-start, $align:center);
+      max-width:100%;
+    }
+    .button {
+      flex:0 0 auto;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    position:relative;
+    max-width:459px;
+    margin:0 auto;
+    @include media-breakpoint-up-lg {
+      justify-content: flex-end;
+      margin-left:auto;
+    }
+    img {
+      position:relative;
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+{% set bg_image_mobile = module.background_image_mobile.src|escape_url  %}
+{% set bg_image = module.image.src|escape_url %}
+<div class="typHero" id="{{ name }}">
+  <div class="typHero__bg absolute-fill">
+    <!-- mobile image: shown only on small screens (up to md breakpoint) -->
+    <img
+    class="typHero__bg-img w-100 h-100 background-cover d-sm-none"
+    src="{{ bg_image_mobile }}"
+    alt="background image"
+    loading="eager">
+    <!-- desktop image: shown only on md and larger screens -->
+    <img
+      class="typHero__bg-img w-100 h-100 background-cover d-none d-sm-block"
+      src="{{ bg_image }}"
+      alt="background image"
+      loading="eager">
+    {% if !module.remove_overlay %}
+      <div class="typHero__overlay overlay"></div>
+    {% endif %}
+  </div>
+  <div class="container z-1 position-relatve">
+    <div class="row align-items-end">
+      <div class="col-12 col-lg-7 typHero__left">
+        <div class="typHero__text">
+          {{ module.text }}
+        </div>
+        {% if module.lp_url.href %}
+        <div class="typHero__buttons">
+          <a href="{{ module.lp_url.href }}" class="button button--primary" target="_blank">{{ module.download_text }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

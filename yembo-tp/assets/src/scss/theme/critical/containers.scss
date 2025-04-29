@@ -1,0 +1,7 @@
+@import "../../config.scss";
+
+.container{
+  @include media-breakpoint-up-xxxl{
+    max-width: 1600px;
+  }
+}

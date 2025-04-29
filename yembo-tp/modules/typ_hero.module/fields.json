@@ -1,0 +1,376 @@
+[ {
+  "id" : "f64e8e95-2105-7dd2-b00f-b0bd72ed70f3",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "Text",
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Thank you! Our whitepaper has been sent to your inbox</h1><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>"
+}, {
+  "id" : "f64e8e95-2105-7dd2-b00f-b0cd72ee70f3",
+  "name" : "download_text",
+  "label" : "Download button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Download now",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Download now"
+}, {
+  "id" : "lp_url",
+  "name" : "lp_url",
+  "label" : "Download URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "cb25d241-5436-d2f3-d147-316193cecc65",
+  "name" : "image",
+  "label" : "Background Image",
+  "help_text" : "This overrides the default featured image for the blog post.",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.lumiglobal.com/hubfs/lumi-global-white-paper-Enhancing-Governance-and-Engagement-in-Member-Meetings-header.jpg"
+  }
+}, {
+  "id" : "d9f39852-4b0e-42c5-c111-a71f7f43d84e",
+  "name" : "background_image_mobile",
+  "label" : "Background Image (Mobile)",
+  "help_text" : "This overrides the default featured image for the blog post. This image will be shown on screen sizes less than 576px in width.",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://www.lumiglobal.com/hubfs/lumi-global-white-paper-Enhancing-Governance-and-Engagement-in-Member-Meetings-header.jpg"
+  }
+}, {
+  "id" : "0dae3ea6-9f6f-fa56-0f68-1c8b89643174",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6ebd1b4c-e749-1f3f-092e-9571242a8188",
+    "name" : "spacing",
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "66e3163b-4bb1-851e-fe0d-4ee692a17694",
+      "name" : "small",
+      "label" : "Small (≥576px)",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "a3945712-826f-a422-9cda-3e06f902fff8",
+        "name" : "padding_top",
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 60
+      }, {
+        "id" : "b488d672-3e78-16d5-2821-3d2e907be842",
+        "name" : "padding_bottom",
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 60
+      } ],
+      "tab" : "STYLE",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "padding_top" : 60,
+        "padding_bottom" : 60
+      }
+    }, {
+      "id" : "6fde09dc-7056-1334-6f2d-b1d9e7b3eb48",
+      "name" : "medium",
+      "label" : "Medium (\t≥768px)",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "70e7f465-cf27-7f0c-aec3-78a9ecd0a155",
+        "name" : "padding_top",
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 80
+      }, {
+        "id" : "5a5882c4-65aa-64a6-0a98-ee157eef66d7",
+        "name" : "padding_bottom",
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 80
+      } ],
+      "tab" : "STYLE",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "padding_top" : 80,
+        "padding_bottom" : 80
+      }
+    }, {
+      "id" : "f9e94609-49ae-01b2-4bf6-79e1394b706b",
+      "name" : "large",
+      "label" : "Large (≥992px)",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "65493f27-8f7f-f1ab-857c-a55d56f28712",
+        "name" : "padding_top",
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 100
+      }, {
+        "id" : "481b737b-65ac-0971-fa45-0b5e54670333",
+        "name" : "padding_bottom",
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 60
+      } ],
+      "tab" : "STYLE",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      }
+    }, {
+      "id" : "4c3c4d9c-32c0-1cf1-dbfd-0611e6d95e13",
+      "name" : "extra_large",
+      "label" : "Extra Large (≥1200px)",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "3d0d98bd-088c-3416-b86e-028ac4fbf06a",
+        "name" : "padding_top",
+        "label" : "Padding Top",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 100
+      }, {
+        "id" : "30843ff8-cedb-283a-d41a-f179a397443e",
+        "name" : "padding_bottom",
+        "label" : "Padding Bottom",
+        "required" : false,
+        "locked" : false,
+        "display" : "slider",
+        "min" : 0,
+        "step" : 1,
+        "prefix" : "",
+        "suffix" : "px",
+        "type" : "number",
+        "display_width" : null,
+        "default" : 60
+      } ],
+      "tab" : "STYLE",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "small" : {
+        "padding_top" : 60,
+        "padding_bottom" : 60
+      },
+      "medium" : {
+        "padding_top" : 80,
+        "padding_bottom" : 80
+      },
+      "large" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      },
+      "extra_large" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      }
+    }
+  }, {
+    "id" : "6c6327f1-2d21-44a4-247a-1faea830aa2c",
+    "name" : "colors",
+    "label" : "Colors",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4b1f81a3-fee9-a07c-959f-4035493cb059",
+      "name" : "background_color",
+      "label" : "Background Color",
+      "required" : true,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : "#061128",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "4b1f81a4-fee9-a07c-959f-4035493cb059",
+      "name" : "text_color",
+      "label" : "Text Color",
+      "required" : true,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "background_color" : {
+        "color" : "#061128",
+        "opacity" : 100
+      },
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "spacing" : {
+      "small" : {
+        "padding_top" : 60,
+        "padding_bottom" : 60
+      },
+      "medium" : {
+        "padding_top" : 80,
+        "padding_bottom" : 80
+      },
+      "large" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      },
+      "extra_large" : {
+        "padding_top" : 100,
+        "padding_bottom" : 60
+      }
+    },
+    "colors" : {
+      "background_color" : {
+        "color" : "#061128",
+        "opacity" : 100
+      },
+      "text_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "56308445-cee9-b56e-1838-460a2901c43c",
+  "name" : "remove_overlay",
+  "label" : "Remove overlay?",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+} ]

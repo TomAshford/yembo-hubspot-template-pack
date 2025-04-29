@@ -1,0 +1,81 @@
+[ {
+  "id" : "quote",
+  "name" : "quote",
+  "label" : "Quote",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "quote.quote",
+    "name" : "quote",
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "Quote",
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<blockquote>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, voluptua.”</blockquote>"
+  }, {
+    "id" : "quote.logo",
+    "name" : "logo",
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "quote.quote_source",
+    "name" : "quote_source",
+    "label" : "Quote source",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "Name Surname, Job title",
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Name Surname, Job title</p>"
+  }, {
+    "id" : "quote.background_override",
+    "name" : "quote_background_override",
+    "label" : "Background Override",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : null,
+      "width" : null,
+      "height" : null,
+      "max_width" : null,
+      "max_height" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "quote" : "“Lorem ipsum dolor sit amet consectetur do amet”",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "quote_source" : "Name Surname, Job title"
+  }
+} ]

@@ -1,0 +1,111 @@
+@import "../../config.scss";
+
+/* colors
+* using @each to iterate over colors defined in root and creating classes
+============================================================================= */
+
+.color {
+  @each $color, $value in (
+    "white": --white,
+    "black": --black,
+    "grey": --grey,
+    "slate": --slate,
+    "orange": --orange,
+  ) {
+    &--#{$color} {
+      color: var(#{$value});
+    }
+  }
+}
+
+
+
+
+/* backgrounds
+* using @each to iterate over colors defined in root and creating classes
+============================================================================= */
+
+.background{
+  @each $color, $value in (
+  "white": --white,
+  "black": --black,
+  "grey": --grey,
+  "porcelain": --porcelain,
+  "navy": --navy,
+  ) {
+    &--#{$color} {
+      background-color: var(#{$value});
+    }
+  }
+}
+
+
+/* lists
+============================================================================= */
+
+ul.reset-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+/* alignment
+============================================================================= */
+
+.flex-align{
+  @include flex-align;
+}
+
+
+/* lists
+============================================================================= */
+
+.custom-bullets{
+
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 34px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.2em;
+        width: 19px;
+        height: 19px;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19.848" height="19.848" viewBox="0 0 19.848 19.848"><g id="Icon_akar-circle-check" data-name="Icon akar-circle-check" transform="translate(-2.5 -2.5)"><path id="Path_461" data-name="Path 461" d="M12,17.077,14.827,19.9l4.712-5.654" transform="translate(-3.346 -4.182)" fill="none" stroke="%23f39200" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><path id="Path_462" data-name="Path 462" d="M21.848,12.424A9.424,9.424,0,1,1,12.424,3a9.424,9.424,0,0,1,9.424,9.424Z" transform="translate(0 0)" fill="none" stroke="%23f39200" stroke-width="1"/></g></svg>');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+/* other
+============================================================================= */
+
+.background{
+
+  &-cover{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.overlay,
+.link-absolute,
+.absolute-fill{
+  @include absolute-fill;
+  z-index: 1;
+}
+
+.index-top{
+  position: relative;
+  z-index: 10;
+}

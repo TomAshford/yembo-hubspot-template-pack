@@ -1,0 +1,77 @@
+<section class="lpHeroForm" id="{{ name }}">
+  <div class="container lpHeroForm__container">
+    <div class="lpHeroForm__flex">
+      <div class="lpHeroForm__left">
+        <div class="landingPage panel--left">
+          {% for item in module.left_content %}
+            <div class="lpHeroForm__module">
+              <div class="lpHeroForm__module-inner">
+                {% if item.module_type == "text" %}
+                <div class="lpText">
+                  {% if item.content_type %}
+                  <div class="lpText__tag">
+                    <p>{{ item.content_type }}</p>
+                  </div>
+                  {% endif %}
+
+                  <div class="lpText__text">
+                    {{ item.text }}
+                  </div>
+
+                </div>
+                {% endif %}
+                {% if item.module_type == "image" %}
+                <div class="lpImage">
+                  <div class="lpImage__image">
+                
+                    {% if item.image.src %}
+                    {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading|escape_attr }}"' : '' %}
+                      <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }}>
+                    {% endif %}
+                    
+                  </div>
+                
+                  {% if item.show_tag %}
+                  <div class="lpImage__tag">
+                    <p>{{ item.tag_text }}</p>
+                  </div>
+                  {% endif %}
+                
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="lpHeroForm__right">
+        <div class="landingPage panel--right">
+            <div class="form" id="form">
+              <div class="form__wrapper">
+
+                <div class="form__header">
+                  <h2>{{ module.form_header.header|trim }}</h2>
+                  {% if module.form_header.standfirst %}<p>{{ module.form_header.standfirst|trim }}</p>{% endif %}
+                </div>
+
+                <div class="form__form">
+                  {% form
+                    form_to_use="{{ module.form.select_form.form_id }}"
+                    response_response_type="{{ module.form.select_form.response_type }}"
+                    response_message="{{ module.form.select_form.message }}"
+                    response_redirect_id="{{ module.form.select_form.redirect_id }}"
+                    response_redirect_url="{{module.form.select_form.redirect_url}}"
+                    gotowebinar_webinar_key="{{ module.form.select_form.gotowebinar_webinar_key }}"
+                  %}
+                </div>
+
+              </div>
+            </div>
+            <div class="form__bg d-none d-lg-block">
+              <div class="form__bg-item form__bg-item--bot"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

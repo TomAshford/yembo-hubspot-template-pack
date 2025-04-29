@@ -1,0 +1,241 @@
+@import "../../config.scss";
+
+.hs_cos_wrapper_type_form .form-title{
+  @include completely-hide;
+}
+
+form{
+
+  /* General
+  ============================================================================= */
+
+  fieldset{
+    max-width: none!important;
+    .hs-input{
+      width: 100%!important;
+    }
+  }
+
+  .hs-form-field{
+    margin-bottom: 15px;
+    position: relative;
+
+    input,
+    textarea,
+    select{
+      outline: 0;
+      padding: 20px 15px 15px 15px;
+      width: 100%;
+      border-width: 0 0 2px 0;
+      border-color: transparent;
+      background-color: var(--white);
+      @include placeholder($color: var(--black));
+    } 
+
+    &.hs-fieldtype-file{
+
+      > label{
+        display: block;
+      }
+
+      legend{
+        margin-top: 14px;
+      }
+
+      input[type="file"]{
+        background-color: transparent;
+        padding: 5px 0 15px 0;
+      }
+
+    }
+
+
+    select{
+      background: var(--white) url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10.303" height="5.891" viewBox="0 0 10.303 5.891"><path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M11.341,15.361l3.9-3.9a.733.733,0,0,1,1.04,0,.742.742,0,0,1,0,1.043l-4.414,4.417a.735.735,0,0,1-1.015.021L6.4,12.509a.736.736,0,0,1,1.04-1.043Z" transform="translate(-6.188 -11.246)" fill="%23f39200"/></svg>') 90% no-repeat;
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: right 25px center;
+      background-size: 14px;
+      outline: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    textarea.hs-fieldtype-textarea{
+      resize: none;
+    }
+
+    > label{
+      display: none;
+    }
+
+  }
+
+
+  /* Legal / GDPR
+  ============================================================================= */
+
+  .legal-consent-container{
+    // margin-top: 35px;
+
+    span{
+      margin-left: 0!important;
+    }
+
+    *{
+      font-size: 0.875rem;
+    }
+
+    a{
+      color: var(--orange);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    ul{
+      padding: 0;
+      margin-left: 0;
+      list-style-type: none;
+    }
+
+    .hs-richtext{
+      margin-bottom: 15px;
+    }
+
+  }
+
+
+  .hs-fieldtype-booleancheckbox,
+  .hs-form-booleancheckbox{
+    label{
+      display: flex;
+    }
+  }
+
+
+  .hs-form-booleancheckbox{
+
+    a{
+      color: var(--black);
+      text-decoration: underline;
+      &:hover{
+        color: var(--coral);
+      }
+    }
+  }
+
+  li.hs-form-booleancheckbox{
+
+    > label{
+      width: 100%;
+      cursor: pointer;
+    }
+
+    input[type=checkbox]{
+      margin-top: 5px;
+      display: inline-block;
+      cursor: pointer;
+      visibility: hidden;
+      @include fit-content;
+      height: 12px;
+      width: 12px!important;
+      margin-right: 20px;
+
+      &:before {
+        content: "";
+        border: 1px solid var(--white);
+        background-color: var(--white);
+        @include flex-align;
+        @include transition($time: .2s);
+        height: 11px;
+        width: 11px;
+        color: transparent;
+        visibility: visible;
+      }
+
+      &:active:before {
+        transform: scale(0);
+      }
+
+      &:checked:before {
+	      background-image: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.81818L3.69231 7L8 1' stroke='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 7px;
+        background-position: center;
+        background-color: var(--orange);
+        border-color: var(--orange);
+      }
+    }
+
+  }
+
+
+  /* Submit
+  ============================================================================= */
+
+  .hs_submit{
+    margin-top: 40px;
+
+    .actions{
+      @include flex-align;
+    }
+
+    input[type="submit"]{
+      border-radius: 5px;
+      padding: 22px 40px;
+      background-color: var(--orange);
+      color: var(--black);
+      border: 0;
+      font-family: var(--poppins-semibold);
+      font-size: 1.125rem;
+      @include transition;
+
+      &:hover{
+        background-color: var(--navy);
+        color: var(--white);
+      }
+    }
+
+  }
+
+  /* recaptcha
+  ============================================================================= */
+
+  .hs_recaptcha{
+    margin-top: 30px;
+  }
+
+
+  /* error handling
+  ============================================================================= */
+
+  input,
+  select,
+  textarea{
+
+    &.error{
+      border-bottom: 2px solid var(--red);
+    }
+
+  }
+
+  .hs-error-msgs{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    li {
+      line-height: 20px;
+    }
+    label {
+      font-size:12px;
+    }
+  }
+
+  /* ========================================================================== */
+
+
+}

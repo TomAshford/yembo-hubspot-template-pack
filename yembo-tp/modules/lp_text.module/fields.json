@@ -1,0 +1,24 @@
+[ {
+  "id" : "f64e8e95-2105-7dd2-b00f-b0cd72ed60f3",
+  "name" : "content_type",
+  "label" : "Content type",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "eGuide",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "eGuide"
+}, {
+  "id" : "f64e8e95-2105-7dd2-b00f-b0bd72ed70f3",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "Text",
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>"
+} ]

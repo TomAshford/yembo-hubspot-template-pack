@@ -1,0 +1,118 @@
+@import "../../config.scss";
+
+/* general
+============================================================================= */
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* headers
+============================================================================= */
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-header);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+h1{
+  font-size: 2rem;
+  @include media-breakpoint-up-md{
+    font-size: calc(2rem + 1vw);
+  }
+  @include media-breakpoint-up-xl{
+    font-size: 3rem;
+  }
+  &.display--1{
+    font-size: 2.25rem;
+    @include media-breakpoint-up-md{
+      font-size: calc(2.25rem + 1vw);
+    }
+    @include media-breakpoint-up-xl{
+      font-size: 3.4375rem;
+    }
+  }
+}
+
+h2{
+  font-size: 1.875rem;
+  @include media-breakpoint-up-md{
+    font-size: 2rem;
+  }
+  @include media-breakpoint-up-lg{
+    font-size: 2.5rem;
+  }
+}
+
+/* fonts
+============================================================================= */
+
+.poppins{
+
+  &-light{
+    font-family: var(--poppins-light);
+  }
+
+  &-medium{
+    font-family: var(--poppins-medium);
+  }
+
+  &-semibold{
+    font-family: var(--poppins-semibold);
+  }
+
+}
+
+[role="heading"]{
+  font-family: var(--poppins-semibold);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.font-body-medium{
+  font-family: var(--font-body-medium);
+}
+
+.font-body-semibold{
+  font-family: var(--font-body-semibold);
+}
+
+/* body copy
+============================================================================= */
+
+p{
+  font-size: 1rem;
+  &.display--1{
+    font-size: 1.125rem;
+  }
+}
+
+
+
+
+/* lists
+============================================================================= */
+
+ul li,
+ol li{
+  &::marker {
+    color: var(--black);
+  }
+}
+
+/* other
+============================================================================= */
+
+blockquote{
+  font-size: 1.5rem;
+  @include media-breakpoint-up-lg{
+    font-size: 1.875rem;
+  }
+  &.display--1 {
+    font-size: 1.125rem;
+    @include media-breakpoint-up-lg{
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.lpTemplate {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    
+    .row-number-1 {
+        position:relative;
+    }
+
+    .hs_cos_wrapper_widget {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+    }
+
+    .lpTemplate__inner {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        position:static;
+
+        padding-top: 136px;
+        padding-bottom: 60px;
+    
+        @media(min-width: 768px){
+            padding-top: 136px;
+            padding-bottom: 60px;
+        }
+    
+        @media(min-width: 992px){
+            padding-top: 136px;
+            padding-bottom: 80px;
+        }
+    
+        @media(min-width: 1200px){
+            padding-top: 136px;
+            padding-bottom: 100px;
+        }
+
+        .lpTemplate__flex {
+            flex-grow: 1;
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding-bottom:50px;
+    
+            @include media-breakpoint-up-lg {
+                flex-flow: row nowrap;
+            }
+
+            .lpTemplate__left {
+                padding-bottom: 0;
+                padding-right: var(--bs-gutter-x, .75rem);
+                padding-left: var(--bs-gutter-x, .75rem);
+            
+                @include media-breakpoint-up-lg {
+                    padding-right: 0;
+                    padding-left: 0;
+                    padding-bottom: 20px;
+                }
+            
+                .hs_cos_wrapper_type_widget_container {
+                    display: block;
+                }
+            
+                .hs_cos_wrapper_widget {
+                    display: block;
+                    max-width: 100%;
+                    padding-right: calc(var(--bs-gutter-x) * .5);
+                    padding-left: calc(var(--bs-gutter-x) * .5);
+                    margin-left: auto;
+                    width:100%;
+                    @include media-breakpoint-up-lg {
+                        padding-right: 76px;
+                        max-width: 675px;
+                    }
+            
+                    @include media-breakpoint-up-xxl {
+                        max-width: 816px;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+.lpTemplate__flex {    
+    &>.row-fluid-wrapper:first-child {
+        flex: 0 0 100%;
+        width: 100%;
+
+        @include media-breakpoint-up-lg {
+            flex: 0 0 50%;
+            width: 50%;
+        }
+    }
+
+    &>.row-fluid-wrapper:last-child {
+        flex: 0 0 100%;
+        width: 100%;
+        // position: relative;
+
+        @include media-breakpoint-up-lg {
+            flex: 0 0 50%;
+            width: 50%;
+        }
+    }
+}

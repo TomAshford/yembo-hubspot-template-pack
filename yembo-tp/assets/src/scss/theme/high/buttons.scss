@@ -1,0 +1,118 @@
+@import "../../config.scss";
+
+/* buttons
+============================================================================= */
+
+.button{
+  @include transition;
+  @include no-user-select;
+  @include fit-content;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 18px 40px;
+  font-size: 1rem;
+  font-family: var(--font-header);
+  border-radius: 5px;
+
+  &:hover{
+    text-decoration: none; 
+  }
+
+  &--sm{
+    font-size: 1rem;
+    padding: 14px 20px;
+  }
+
+  &--primary{
+    background-color: var(--orange);
+    color: var(--black);
+    &:hover{
+      background-color: var(--grey);
+      color: var(--black);
+    }
+  }
+
+  &--secondary{
+    background-color: var(--grey);
+    color: var(--black);
+    &:hover{
+      background-color: var(--orange);
+      color: var(--black);
+    }
+  }
+
+  &--tertiary{
+    background-color: var(--grey);
+    color: var(--black);
+    &:hover{
+      background-color: var(--rajah);
+      color: var(--black);
+    }
+  }
+
+}
+
+/* video links
+============================================================================= */
+
+.videoLink{
+  font-size: 1.5rem;
+  font-family: var(--font-header);
+  @include flex-align;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  svg{
+    margin-left: 26px;
+    pointer-events: none;
+  }
+
+  &:hover{
+    text-decoration: none;
+    color: var(--orange);
+  }
+
+}
+
+
+/* textLinks
+============================================================================= */
+
+.textLink{
+  font-family: var(--poppins-semibold);
+  display: flex;
+  align-items: center;
+  svg{
+    margin-left: 11px;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+
+  &--primary{
+    color: var(--black);
+    &:hover{
+      color: var(--orange);
+      svg path{
+        fill: var(--orange);
+      }
+    }
+  }
+
+  &--secondary{
+    color: var(--orange);
+    svg path{
+      fill: var(--orange);
+    }
+    &:hover{
+      color: var(--white);
+      svg path{
+        fill: var(--white);
+      }
+    }
+  }
+
+}

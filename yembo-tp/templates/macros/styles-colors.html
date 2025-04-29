@@ -1,0 +1,17 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+
+{% macro colorStyles() %}
+
+  <style>
+
+  #{{name}}{
+    background-color: rgba({{ module.style.colors.background_color.color|convert_rgb }}, {{ module.style.colors.background_color.opacity / 100 }});
+    color: {{ module.style.colors.text_color.color }};
+  }
+
+  </style>
+
+{% endmacro %}

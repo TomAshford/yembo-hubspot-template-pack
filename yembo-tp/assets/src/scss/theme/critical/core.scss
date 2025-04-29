@@ -5,26 +5,15 @@
 
 :root{
 
-  --font-header: 'Poppins-Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-body: 'DMSans-Regular', 'Arial', Helvetica, sans-serif;
-  --font-body-medium: 'DMSans-Medium', 'DMSans-Regular', 'Arial', Helvetica, sans-serif;
-  --font-body-semibold: 'DMSans-Semibold', 'DMSans-Medium', 'Arial', Helvetica, sans-serif;
-
-  --poppins-light: 'Poppins-Light', 'Poppins-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --poppins-regular: 'Poppins-Regular', 'Poppins-Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --poppins-medium: 'Poppins-Medium', 'Poppins-Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --poppins-semibold:  'Poppins-Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-header: Inter, sans-serif;
+  --font-body: Inter, sans-serif;
 
   --white: #FFFFFF;
   --black: #000000;
-  --grey: #99A6B2; 
-  --orange: #F39200;
-  --navy: #334D65;
-  --slate: #66798B;
-  --navy: #00203E;
-  --porcelain: #EBEEF0;
-  --corvette: #FAD399;
-  --rajah: #F8BE66;
+  --text: #333333;
+  --brown: #8C7457;
+  --blue: #0A58C7;
+  --black-blue: #0B111D;
 }
 
 /* globals
@@ -38,9 +27,10 @@ html{
 body{
   margin: 0;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--text);
   font-family: var(--font-body);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 *,

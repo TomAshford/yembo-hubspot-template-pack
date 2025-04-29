@@ -7,10 +7,9 @@
 .color {
   @each $color, $value in (
     "white": --white,
-    "black": --black,
-    "grey": --grey,
-    "slate": --slate,
-    "orange": --orange,
+    "black": --text,
+    "blue": --blue,
+    "brown": --blue,
   ) {
     &--#{$color} {
       color: var(#{$value});
@@ -28,10 +27,9 @@
 .background{
   @each $color, $value in (
   "white": --white,
-  "black": --black,
-  "grey": --grey,
-  "porcelain": --porcelain,
-  "navy": --navy,
+  "black": --text,
+  "brown": --blue,
+  "blue": --blue
   ) {
     &--#{$color} {
       background-color: var(#{$value});

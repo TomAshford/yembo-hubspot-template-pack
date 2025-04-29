@@ -39,7 +39,7 @@
 }
 
 
-@mixin placeholder($color: var(--black)){
+@mixin placeholder($color: var(--text)){
   &::-webkit-input-placeholder{
     color: $color;
     opacity: 1; // firefox
@@ -95,9 +95,8 @@
 
 
 @mixin lg-blockquote-style{
-  font-family: var(--poppins-medium);
-  border-top: 1px solid var(--grey);
-  border-bottom: 1px solid var(--grey);
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
   padding:40px 0 50px 76px;
   margin: 40px 0;
   position:relative;
@@ -114,7 +113,6 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46.896' height='30.578' viewBox='0 0 46.896 30.578'%3E%3Cpath id='Path_1136' data-name='Path 1136' d='M16.682,9.729H.75L14.241-20.85H24.519Zm23.127,0H23.877L37.367-20.85H47.646Z' transform='translate(-0.75 20.85)' fill='%23f39200'/%3E%3C/svg%3E%0A");
   }
   p:first-child {
-    font-family: var(--poppins-medium);
     font-size: 1.5rem;
     @include media-breakpoint-up-lg{
       font-size: 1.875rem;
@@ -132,6 +130,5 @@
     margin-top:20px;
     margin-bottom: 0;
     font-family: var(--font-body);
-    font-weight:500;
   }
 }

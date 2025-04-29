@@ -8,7 +8,10 @@
       </div>
       <div class="col-4 d-none d-lg-flex align-items-end justify-content-end">
         <div class="typCtas__cta d-flex align-items-end justify-content-end">
-          <a href="{{ module.button_url.href }}" class="textLink">{{ module.button_text }}</a>
+          <a href="{{ module.button_url.href }}" class="text-button-wrapper">
+            <div class="text-button">{{ module.button_text }}</div>
+            <div class="text-button tm-2">&gt;</div>
+          </a>
         </div>
       </div>
     </div>
@@ -21,21 +24,22 @@
       
           <a class="resourceCard__link" href="{{ item.content_url.href }}"></a>
       
-          <div class="resourceCard__header{% if item.not_guide %} resourceCard__header--center{% endif %}">
+          <div class="resourceCard__header">
             <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" loading="lazy"/>
           </div>
       
           <div class="resourceCard__body">
       
             <figcaption class="resourceCard__copy">
-              <div class="resourceCard__tag">
-                <p>{{ item.tag_name }}</p>
-              </div>
+              <div class="resourceCard__tag">{{ item.tag_name }}</div>
               <span class="resourceCard__title">{{ item.title }}</span>
-              <span class="resourceCard__text">{{ item.text }}</span>
+              <span class="resourceCard__text">{{ item.copy }}</span>
             </figcaption>
 
-            <button class="textLink">{{ item.button_text }}</button>
+            <div class="resourceCard__cta text-button-wrapper">
+              <div class="text-button">{{ item.button_text }}</div>
+              <div class="text-button tm-2">&gt;</div>
+            </div>
       
           </div>
       
@@ -48,7 +52,10 @@
     </div>
     <div class="row">
       <div class="col-12 typCtas__cta--mobile d-lg-none d-flex align-items-center justify-content-center">
-          <a href="{{ module.button_url.href }}" class="textLink">{{ module.button_text }}</a>
+        <a href="{{ module.button_url.href }}" class="text-button-wrapper">
+          <div class="text-button">{{ module.button_text }}</div>
+          <div class="text-button tm-2">&gt;</div>
+        </a>
       </div>
     </div>
   </div>

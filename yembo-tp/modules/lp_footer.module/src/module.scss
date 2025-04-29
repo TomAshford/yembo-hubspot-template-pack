@@ -1,8 +1,9 @@
-@import "website/assets/src/scss/config.scss";
+@import "yembo-tp/assets/src/scss/config.scss";
 
 .footer{
 
-  background:rgba(235, 238, 240, 1.0);
+  background:var(--black-blue);
+  color:var(--white);
 
   &__ul{
     padding: 0;
@@ -32,12 +33,12 @@
       margin: 0 10px 20px 10px;
       font-size:0.75rem;
       line-height:1.2em;
-      color: var(--black);
+      color: var(--white);
       a {
-        color: var(--black);
+        color: var(--white);
         &:hover {
-          color: var(--black);
-          text-decoration:underline;
+          color: rgba(255, 255, 255, 0.6);
+          text-decoration:none;
         }
       }
       @include media-breakpoint-up-md{

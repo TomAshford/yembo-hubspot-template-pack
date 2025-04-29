@@ -1,14 +1,14 @@
 {
-  "name": "lumi-hubspot-website",
+  "name": "yembo-hubspot-website",
   "version": "1.0.0",
-  "description": "Lumi Global HubSpot website developed by Tomorrow People.",
+  "description": "Yembo HubSpot website developed by Tomorrow People.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tomorrow-People/lumi-hubspot-website.git"
+    "url": "git+https://github.com/Tomorrow-People/yembo-hubspot-template-pack.git"
   },
   "keywords": [
     "hubspot"
@@ -16,9 +16,9 @@
   "author": "Tomorrow People",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tomorrow-People/lumi-hubspot-website/issues"
+    "url": "https://github.com/Tomorrow-People/yembo-hubspot-template-pack/issues"
   },
-  "homepage": "https://github.com/Tomorrow-People/lumi-hubspot-website#readme",
+  "homepage": "https://github.com/Tomorrow-People/yembo-hubspot-template-pack#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",

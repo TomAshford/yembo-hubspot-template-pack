@@ -1,0 +1,92 @@
+[ {
+  "id" : "8edd5c03-b9bc-377c-1418-b2d5333bf73a",
+  "name" : "content_link",
+  "display_width" : null,
+  "label" : "Content Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://yembo.ai/",
+    "content_id" : null
+  }
+}, {
+  "id" : "cbd7abe4-4b93-46ed-e0b5-656eda5ec251",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://yembo.ai/hubfs/yembo-tp/email-image.jpg",
+    "alt" : "email-hero-image",
+    "width" : 480,
+    "height" : 320
+  }
+}, {
+  "name" : "image_max",
+  "label" : "Image max width",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 50,
+  "max" : 600,
+  "step" : 1,
+  "type" : "number",
+  "prefix": "",
+  "suffix" : "",
+  "default" : 368,
+  "placeholder": "50"
+}, {
+  "name" : "plain_background",
+  "label" : "Plain background",
+  "required" : false,
+  "locked" : false,
+  "type" : "boolean",
+  "display":"checkbox",
+  "inline_help_text" : "Remove half & half background and choose a plain background colour.",
+  "default" : false
+}, {
+  "name" : "bg_color",
+  "label" : "Background color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "visibility" : {
+    "controlling_field_path" : "plain_background",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "default" : {
+     "color" : "#0B111D",
+     "opacity" : 100
+  }
+}, {
+  "id" : "70018ae0-ec2c-c91b-bc98-208fc881e11f",
+  "name" : "bg_pattern",
+  "display_width" : null,
+  "label" : "Background Pattern",
+  "inline_help_text" : "Max width 600 pixels.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://yembo.ai/hubfs/yembo-tp/email-bg-black-blue.jpg",
+    "alt" : "small_hero_bg",
+    "loading" : "lazy",
+    "width" : 600,
+    "height" : 370,
+    "size_type" : "exact"
+  }
+}  ]

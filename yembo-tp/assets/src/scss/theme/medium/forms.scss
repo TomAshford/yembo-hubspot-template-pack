@@ -29,7 +29,7 @@ form{
       border-width: 0 0 2px 0;
       border-color: transparent;
       background-color: var(--white);
-      @include placeholder($color: var(--black));
+      @include placeholder($color: var(--text));
     } 
 
     &.hs-fieldtype-file{
@@ -89,9 +89,10 @@ form{
     }
 
     a{
-      color: var(--orange);
+      color: var(--white);
+      text-decoration: underline;
       &:hover{
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
 
@@ -119,10 +120,10 @@ form{
   .hs-form-booleancheckbox{
 
     a{
-      color: var(--black);
+      color: var(--text);
       text-decoration: underline;
       &:hover{
-        color: var(--coral);
+        color: var(--blue);
       }
     }
   }
@@ -165,8 +166,8 @@ form{
         background-repeat: no-repeat;
         background-size: 7px;
         background-position: center;
-        background-color: var(--orange);
-        border-color: var(--orange);
+        background-color: var(--blue);
+        border-color: var(--blue);
       }
     }
 
@@ -185,16 +186,15 @@ form{
 
     input[type="submit"]{
       border-radius: 5px;
-      padding: 22px 40px;
-      background-color: var(--orange);
-      color: var(--black);
+      padding: 12px 20px;
+      background-color: var(--blue);
+      color: var(--white);
       border: 0;
-      font-family: var(--poppins-semibold);
       font-size: 1.125rem;
       @include transition;
 
       &:hover{
-        background-color: var(--navy);
+        background-color: var(--blue);
         color: var(--white);
       }
     }

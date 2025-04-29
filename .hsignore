@@ -1,4 +1,4 @@
 *.scss
 *.map
-/website/assets/src/**
-/website/assets/build/css/style.css.map
+/yembo-tp/assets/src/**
+/yembo-tp/assets/build/css/style.css.map

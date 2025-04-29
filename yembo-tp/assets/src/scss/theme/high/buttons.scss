@@ -11,108 +11,59 @@
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  padding: 18px 40px;
+  padding: 12px 20px;
   font-size: 1rem;
   font-family: var(--font-header);
+  font-weight: 700;
   border-radius: 5px;
 
   &:hover{
     text-decoration: none; 
   }
 
-  &--sm{
-    font-size: 1rem;
-    padding: 14px 20px;
-  }
-
   &--primary{
-    background-color: var(--orange);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--white);
     &:hover{
-      background-color: var(--grey);
-      color: var(--black);
+      background-color: var(--black-blue);
+      color: var(--white);
     }
   }
 
   &--secondary{
-    background-color: var(--grey);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--white);
     &:hover{
-      background-color: var(--orange);
-      color: var(--black);
+      background-color: var(--black-blue);
+      color: var(--white);
     }
   }
 
   &--tertiary{
-    background-color: var(--grey);
-    color: var(--black);
+    background-color: var(--white);
+    color: var(--text);
     &:hover{
-      background-color: var(--rajah);
-      color: var(--black);
+      background-color: var(--white);
+      color: var(--text);
     }
   }
 
 }
 
-/* video links
-============================================================================= */
-
-.videoLink{
-  font-size: 1.5rem;
-  font-family: var(--font-header);
-  @include flex-align;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-
-  svg{
-    margin-left: 26px;
-    pointer-events: none;
-  }
-
-  &:hover{
-    text-decoration: none;
-    color: var(--orange);
-  }
-
-}
-
-
-/* textLinks
-============================================================================= */
-
-.textLink{
-  font-family: var(--poppins-semibold);
-  display: flex;
+.text-button-wrapper {
+  color: var(--blue);
   align-items: center;
-  svg{
-    margin-left: 11px;
-  }
-  &:hover{
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  transition: opacity .2s;
+  .text-button {
+    display: block;
+    font-size: 17px;
+    letter-spacing: -.01em;
+    margin-right: 6px;
     text-decoration: none;
+    align-items: center;
+    font-weight: 700;
   }
-
-  &--primary{
-    color: var(--black);
-    &:hover{
-      color: var(--orange);
-      svg path{
-        fill: var(--orange);
-      }
-    }
-  }
-
-  &--secondary{
-    color: var(--orange);
-    svg path{
-      fill: var(--orange);
-    }
-    &:hover{
-      color: var(--white);
-      svg path{
-        fill: var(--white);
-      }
-    }
-  }
-
 }

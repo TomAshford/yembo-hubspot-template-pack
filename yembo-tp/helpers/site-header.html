@@ -1,0 +1,21 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+
+<link href="{{ get_asset_url('/yembo-tp/assets/build/css/layout.min.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="{{ get_asset_url('/yembo-tp/assets/build/css/critical.min.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="{{ get_asset_url('/yembo-tp/assets/build/css/high.min.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="{{ get_asset_url('/yembo-tp/assets/build/css/medium.min.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="{{ get_asset_url('/yembo-tp/assets/build/css/low.min.css') }}" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+{# fallbacks in case js is disabled #}
+<noscript><link rel="stylesheet" href="{{ get_asset_url('/yembo-tp/assets/build/css/layout.min.css') }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ get_asset_url('/yembo-tp/assets/build/css/critical.min.css') }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ get_asset_url('/yembo-tp/assets/build/css/high.min.css') }}"></noscript> 
+<noscript><link rel="stylesheet" href="{{ get_asset_url('/yembo-tp/assets/build/css/medium.min.css') }}"></noscript>
+<noscript><link rel="stylesheet" href="{{ get_asset_url('/yembo-tp/assets/build/css/low.min.css') }}"></noscript>

@@ -20,11 +20,11 @@
   "show_emoji_picker" : false,
   "type" : "text",
   "display_width" : null,
-  "default" : "Browse all insights"
+  "default" : "Browse all resources"
 }, {
   "id" : "content_url_top",
-  "name" : "content_url",
-  "label" : "Content URL",
+  "name" : "button_url",
+  "label" : "Button URL",
   "required" : false,
   "locked" : false,
   "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
@@ -32,7 +32,7 @@
   "display_width" : null,
   "default" : {
     "content_id" : null,
-    "href" : "",
+    "href" : "https://yembo.ai/resources/white-paper-ebook",
     "type" : "EXTERNAL"
   }
 }, {
@@ -60,7 +60,7 @@
     "display_width" : null,
     "default" : {
       "size_type" : "auto",
-      "src" : "",
+      "src" : "https://yembo.ai/hubfs/Yembo_April2023/video/61ba02e401639b85b0abf41d_move-staff.jpg",
       "alt" : "resource-post-insert-placeholder",
       "loading" : "lazy"
     }
@@ -76,11 +76,24 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "display_width" : null,
-    "default" : "Insights"
+    "default" : "Whitepaper"
   }, {
     "id" : "f64e8e55-2105-5dd2-b00f-b0cd52ee70f3",
     "name" : "title",
     "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+  }, {
+    "id" : "f64e8e55-2105-5dd2-b00f-b0cd52ee70f2",
+    "name" : "copy",
+    "label" : "Copy",
     "required" : false,
     "locked" : false,
     "validation_regex" : "",
@@ -126,46 +139,49 @@
   "default" : [ {
     "image" : {
       "size_type" : "auto",
-      "src" : "",
+      "src" : "https://yembo.ai/hubfs/Yembo_April2023/video/61ba02e401639b85b0abf41d_move-staff.jpg",
       "alt" : "resource-post-insert-placeholder",
       "loading" : "lazy"
     },
     "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-    "tag_name" : "Insights",
+    "copy" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "eGuide",
     "button_text" : "Learn more",
     "content_url" : {
       "content_id" : null,
-      "href" : "",
+      "href" : "https://yembo.ai/",
       "type" : "EXTERNAL"
     }
   }, {
     "image" : {
       "size_type" : "auto",
-      "src" : "",
+      "src" : "https://yembo.ai/hubfs/Yembo_April2023/video/61ba02e401639b85b0abf41d_move-staff.jpg",
       "alt" : "resource-post-insert-placeholder",
       "loading" : "lazy"
     },
     "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-    "tag_name" : "Market commentary",
+    "copy" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "Whitepaper",
     "button_text" : "Learn more",
     "content_url" : {
       "content_id" : null,
-      "href" : "",
+      "href" : "https://yembo.ai/",
       "type" : "EXTERNAL"
     }
   }, {
     "image" : {
       "size_type" : "auto",
-      "src" : "",
+      "src" : "https://yembo.ai/hubfs/Yembo_April2023/video/61ba02e401639b85b0abf41d_move-staff.jpg",
       "alt" : "resource-post-insert-placeholder",
       "loading" : "lazy"
     },
     "title" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-    "tag_name" : "Research",
+    "copy" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+    "tag_name" : "Report",
     "button_text" : "Learn more",
     "content_url" : {
       "content_id" : null,
-      "href" : "",
+      "href" : "https://yembo.ai/",
       "type" : "EXTERNAL"
     }
   } ]

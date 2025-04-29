@@ -4,5 +4,5 @@ hubspot.config.yml
 *.css.map
 /assets/build/css/*.min.css
 /assets/build/js/*.js
-website/assets/build/css/low.min.css
+yembo-tp/assets/build/css/low.min.css
 *.map

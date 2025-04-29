@@ -11,8 +11,8 @@
   "display_width" : null,
   "default" : {
     "size_type" : "auto",
-    "src" : "https://go.lumiglobal.com/hubfs/lumi-global-logo-dark.svg",
-    "alt" : "lumi-global-logo-dark",
+    "src" : "https://content.tomorrow-people.com/hubfs/yembo-tp/yembo_logo_300.webp",
+    "alt" : "Yembo logo",
     "loading" : "eager"
   }
 }, {
@@ -26,7 +26,7 @@
   "display_width" : null,
   "default" : {
     "content_id" : null,
-    "href" : "https://www.lumiglobal.com/",
+    "href" : "https://yembo.ai/",
     "type" : "EXTERNAL"
   }
 } ]

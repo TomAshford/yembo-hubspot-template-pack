@@ -3,8 +3,8 @@
   "templateType" : 4,
   "attachedStylesheets" : [ ],
   "attachedJs" : [ ],
-  "customHead" : "",
-  "customFooter" : "",
+  "customHead" : "{% include '/yembo-tp/helpers/site-header.html' %}",
+  "customFooter" : "{% include '/yembo-tp/helpers/site-footer.html' %}",
   "bodyClass" : "typTemplate",
   "bodyCss" : "",
   "bodyEditable" : false,
@@ -25,14 +25,14 @@
         "params" : {
           "css_class" : "",
           "schema_version" : 2,
-          "path" : "/website/modules/lp_header",
+          "path" : "/yembo-tp/modules/lp_header",
           "per_widget_wrapper_html" : "",
           "logo_url" : {
-            "href" : "https://www.lumiglobal.com/"
+            "href" : "https://yembo.ai/"
           },
           "css_style" : "",
           "logo" : {
-            "src" : "https://go.lumiglobal.com/hubfs/website/images/globals/lumi-global-logo-orange-and-white.svg"
+            "src" : "https://yembo.ai/hubfs/yembo-tp/yembo_logo_rev_300.webp"
           },
           "wrapping_html" : "",
           "css_id" : "",
@@ -114,7 +114,7 @@
               "params" : {
                 "css_class" : "",
                 "schema_version" : 2,
-                "path" : "/website/modules/typ_hero",
+                "path" : "/yembo-tp/modules/typ_hero",
                 "per_widget_wrapper_html" : "",
                 "css_style" : "",
                 "wrapping_html" : "",
@@ -135,12 +135,12 @@
               "x" : 0,
               "w" : 12,
               "name" : "module_1691400203010171",
-              "label" : "show-posts-from-blog",
+              "label" : "2025 - TYP CTAs",
               "type" : "custom_widget",
               "params" : {
                 "css_class" : "",
                 "schema_version" : 2,
-                "path" : "/website/modules/show-posts-from-blog",
+                "path" : "/yembo-tp/modules/typ_ctas",
                 "per_widget_wrapper_html" : "",
                 "css_style" : "",
                 "wrapping_html" : "",
@@ -195,7 +195,7 @@
         "params" : {
           "css_class" : "",
           "schema_version" : 2,
-          "path" : "/website/modules/lp_footer",
+          "path" : "/yembo-tp/modules/lp_footer",
           "per_widget_wrapper_html" : "",
           "css_style" : "",
           "wrapping_html" : "",

@@ -1,0 +1,59 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+{# libs #}
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+
+{# theme #}
+<script defer src="{{ get_asset_url('/yembo-tp/assets/build/js/theme.min.js') }}"></script>
+
+
+<script>
+
+  /*
+  * add GSAP animation CSS only if not in HS Editor.
+  */
+
+  if (!window.hsInEditor) {
+    document.write(`
+      <style>
+        [data-gsap-fade-in],
+        [data-gsap-fade-in-up]{
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        [data-gsap-stagger]{
+          opacity: 0;
+          transform: translateY(50px);
+          visibility: hidden;
+        }
+
+        [data-gsap-rl-reveal] {
+          opacity: 0;
+          transform: translateX(-50px);
+          visibility: hidden;
+        }
+
+        [data-gsap-from-left],
+        [data-gsap-from-right]{
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        [data-gsap-image-reveal]{
+          visibility: hidden;
+          position: relative;
+          overflow: hidden;
+        }
+        [data-gsap-image-reveal] img{
+          transform-origin: left;
+        }
+      </style>
+    `);
+  }
+</script>

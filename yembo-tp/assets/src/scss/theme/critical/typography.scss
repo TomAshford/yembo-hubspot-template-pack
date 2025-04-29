@@ -13,7 +13,7 @@ p, h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6{
   font-family: var(--font-header);
   margin-bottom: 20px;
-  letter-spacing: -0.02em;
+  font-weight:700;
 }
 
 h1{
@@ -48,34 +48,18 @@ h2{
 /* fonts
 ============================================================================= */
 
-.poppins{
-
-  &-light{
-    font-family: var(--poppins-light);
-  }
-
-  &-medium{
-    font-family: var(--poppins-medium);
-  }
-
-  &-semibold{
-    font-family: var(--poppins-semibold);
-  }
-
-}
-
 [role="heading"]{
-  font-family: var(--poppins-semibold);
+  font-family: var(--font-header);
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 .font-body-medium{
-  font-family: var(--font-body-medium);
+  font-family: var(--font-body);
 }
 
 .font-body-semibold{
-  font-family: var(--font-body-semibold);
+  font-family: var(--font-body);
 }
 
 /* body copy
@@ -97,7 +81,7 @@ p{
 ul li,
 ol li{
   &::marker {
-    color: var(--black);
+    color: var(--text);
   }
 }
 

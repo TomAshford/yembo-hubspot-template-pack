@@ -1,0 +1,64 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+
+{% macro spacingStyles() %}
+
+  <style>
+
+  #{{name}}{
+    padding-top: {{ module.style.spacing.small.padding_top }}px;
+    padding-bottom: {{ module.style.spacing.small.padding_bottom }}px;
+  }
+
+  @media(min-width: 768px){
+    #{{name}}{
+      padding-top: {{ module.style.spacing.medium.padding_top }}px;
+      padding-bottom: {{ module.style.spacing.medium.padding_bottom }}px;
+    }
+  }
+
+  @media(min-width: 992px){
+    #{{name}}{
+      padding-top: {{ module.style.spacing.large.padding_top }}px;
+      padding-bottom: {{ module.style.spacing.large.padding_bottom }}px;
+    }
+  }
+
+  @media(min-width: 1200px){
+    #{{name}}{
+      padding-top: {{ module.style.spacing.extra_large.padding_top }}px;
+      padding-bottom: {{ module.style.spacing.extra_large.padding_bottom }}px;
+    }
+  }
+
+  #{{name}}{
+    margin-top: {{ module.style.spacing.small.margin_top }}px;
+    margin-bottom: {{ module.style.spacing.small.margin_bottom }}px;
+  }
+
+  @media(min-width: 768px){
+    #{{name}}{
+      margin-top: {{ module.style.spacing.medium.margin_top }}px;
+      margin-bottom: {{ module.style.spacing.medium.margin_bottom }}px;
+    }
+  }
+
+  @media(min-width: 992px){
+    #{{name}}{
+      margin-top: {{ module.style.spacing.large.margin_top }}px;
+      margin-bottom: {{ module.style.spacing.large.margin_bottom }}px;
+    }
+  }
+
+  @media(min-width: 1200px){
+    #{{name}}{
+      margin-top: {{ module.style.spacing.extra_large.margin_top }}px;
+      margin-bottom: {{ module.style.spacing.extra_large.margin_bottom }}px;
+    }
+  }
+
+  </style>
+
+{% endmacro %}

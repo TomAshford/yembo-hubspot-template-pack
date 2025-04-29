@@ -1,0 +1,102 @@
+{% set aspect = module.image.height / module.image.width %}
+
+{% if module.image.src %}
+
+{% if module.image.width > module.image_max %}
+  {% set image_width = module.image_max %}
+{% else %}
+  {% set image_width = module.image.width %}
+{% endif %}
+
+{% set image_height = image_width * aspect %}
+{% set diff = image_height - 342 %}
+
+{% else %}
+
+{% set diff = -1 %}
+
+{% endif %}
+
+{% set windows_left = (600 - image_width)/2 %}
+{% set windows_top = 342 - image_height %}
+
+{% if module.plain_background %}
+  {% set bg_color = module.bg_color.color %}
+{% else %}
+  {% set bg_pattern = module.bg_pattern.src %}
+  {% set bg_color = "#0A58C7" %}
+{% endif %}
+
+<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;text-align:center;width:100%;">
+  <tbody>
+    <tr>
+      <td valign="top" align="center" width="100%" style="width:100%;"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td valign="top" align="center" width="100%" style="width:100%;background:{{ bg_color }};"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                <tbody>
+                  <tr>
+                    <td valign="middle" style="border-collapse:collapse; mso-line-height-rule:exactly; word-break:break-word;" class="em_aside26">
+                      <!--[if mso]>
+                        <center>
+                        <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="600" align="center" style="text-align:center;">
+                      <![endif]-->
+                      <div style="width:100%;max-width:600px;margin:0 auto;display:block;text-align:center;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                          <tbody>
+                            <tr>
+                              <td valign="top" align="center" width="100%" style="width:100%;"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                                  <tbody>
+                                    <tr>
+                                      {% if module.plain_background %}
+                                      <td class="hero_bg" valign="middle" width="100%" align="center" style="width:100%;">
+                                      {% else %}
+                                      <td class="hero_bg" valign="middle" width="100%" align="center" height="{{ image_height }}" style="background-image: url({{ bg_pattern }}); height:{{ image_height }}px; background-size:100% 100%;background-position:left center;width:100%;" background="{{ bg_pattern }}"><!--[if gte mso 9]>
+                                       <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior: url(#default#VML); display: inline-block; position: absolute; width: 600px; height:{% if diff < 0 %}{{ image_height }}{% else %}{{ image_height + diff }}{% endif %}px; top: 0; left: -1px; border: 0; z-index: 1;" src="{{ bg_pattern }}" />                             
+                                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="display: inline-block; position: absolute; width: 600px; height: {% if diff < 0 %}{{ image_height }}{% else %}{{ image_height + diff }}{% endif %}px; top: 0; left: -1px; border: 0; z-index: 2;">
+                                        <v:fill opacity="0%" style="z-index: 1;"/> 
+                                        <div>                       
+                                        <![endif]-->{% endif %}<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                          <tbody>
+                                            {% if module.image.src %}
+                                            <tr>
+                                              <td width="100%" align="center" valign="middle" role="presentation" style="width:100%;border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:10px;">
+                                                {% if module.content_link.href %}
+                                                <a href="{{ module.content_link.href }}" target="_blank" style="text-decoration: none;">{% endif %}
+                                                  <!--[if mso 16]> <v:image src="{{ module.image.src }}" style="position:relative;top:{{ windows_top }}px;left:{{ windows_left }}px;width:{{ image_width }}px;height:{{ image_height }}px"> </v:image><![endif]-->
+                                                    <!--[if !mso 16]><!-- -->
+                                                  <img src="{{ module.image.src }}?noresize" alt="{{ module.image.alt }}" {{ sizeAttrs }} width="{{ image_width }}" border="0" style="font-family: Arial, sans-serif; font-size: 20px; line-height: 25px; color: #000000; max-width: 100%; display: block;" />
+                                                  <!--<![endif]-->
+                                                {% if module.content_link.href %}</a>{% endif %}                         
+                                              </td>
+                                            </tr>
+                                            {% else %}
+                                            <tr>
+                                              <td height="30" style="height: 30px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                            </tr>
+                                            {% endif %}
+                                          </tbody>
+                                        </table>{% if module.plain_background %}</td>{% else %}<!--[if gte mso 9]>   
+                          </div></v:fill></v:rect><![endif]--></td>{% endif %}
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--[if mso]>
+                        </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+                        </center>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table></td>
+              </tr>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>

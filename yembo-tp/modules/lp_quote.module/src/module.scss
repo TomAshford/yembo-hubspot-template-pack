@@ -1,4 +1,4 @@
-@import "website/assets/src/scss/config.scss";
+@import "yembo-tp/assets/src/scss/config.scss";
 
 .lpQuote {
     position:relative;
@@ -8,7 +8,7 @@
     background-repeat:no-repeat;
     background-position:100% 50%;
     background-size:cover;
-    background-color:rgba(8, 17, 38, 1.0);
+    background-color:var(--blue);
     @include media-breakpoint-up-lg {
         text-align:left;
     }

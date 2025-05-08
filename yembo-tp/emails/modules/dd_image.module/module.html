@@ -1,0 +1,53 @@
+{% set href = module.link_field.url.href %}
+{% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+{% endif %}
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    {% if module.padding_top > 0 %}
+    <tr>
+      <td style="height:{{ module.padding_top }}px;background-color:{{ module.background_color.color }};width:100%;" bgcolor="{{ module.background_color.color }}" height="{{ module.padding_top }}"></td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td bgcolor="{{ module.background_color.color }}">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            {% if module.padding_left > 0 %}
+            <td width="{{ module.padding_left }}" style="width:{{ module.padding_left }}px;"></td>
+            {% endif %}
+            <td align="center" valign="bottom" style="background-color:{{ module.background_color.color }};">
+              <table class="hse-image-wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top" style="font-family: Lato, Tahoma, sans-serif; color:#000000; word-break:break-word; text-align:center;">
+                      {% if module.link_field.url.href %}
+                      <a {% if module.button_link.url.type is equalto "CALL_TO_ACTION"  %}
+                href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+              {% else %}
+                href="{{ href|escape_url }}"
+              {% endif %} target="_blank" {% if module.button_link.rel %}rel="{{ module.button_link.rel|escape_attr }}"{% endif %}>{% endif %}
+                      {% if module.image.src %}
+                      <img alt="{{ module.image.alt }}" src="{{ module.image.src }}" style="outline:none; text-decoration:none; width:{{ module.image.width }}px; max-width:100%; font-size:16px" width="{{ module.image.width }}" align="center">
+                      {% endif %}
+                      {% if module.link_field.url.href %}</a>{% endif %}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            {% if module.padding_right > 0 %}
+            <td width="{{ module.padding_right }}" style="width:{{ module.padding_right }}px;"></td>
+            {% endif %}
+          </tr>
+        </table>
+      </td>
+    </tr>
+    {% if module.padding_bottom > 0 %}
+    <tr>
+      <td style="height:{{ module.padding_bottom }}px;background-color:{{ module.background_color.color }};width:100%;" bgcolor="{{ module.background_color.color }}"" height="{{ module.padding_bottom }}"></td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>

@@ -1,0 +1,148 @@
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      {% if module.background_image.src %}
+      <td width="100%" align="center" valign="middle" height="{{ module.background_image.height|escape_attr }}" style="background-image: url({{ module.background_image.src|escape_url }}); height:{{ module.background_image.height }}px; background-repeat:no-repeat;background-position:center top; background-size:cover; background-color:#ffffff;width:100%;" background="{{ module.background_image.src|escape_url }}" bgcolor="#ffffff"><!--[if gte mso 9]>
+        <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior: url(#default#VML); display: inline-block; position: absolute; width: 600px; height:{{ module.background_image.height }}px; top: 0; left: 0; border: 0; z-index: 1;" src="{{ module.background_image.src }}" />                             
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="display: inline-block; position: absolute; width: 600px; height: {{ module.background_image.height }}px; top: 0; left: 0; border: 0; z-index: 2;">
+        <v:fill opacity="0%" style="z-index: 1;"/> 
+        <div>                       
+        <![endif]-->{% else %}
+        <td width="100%" align="center" valign="middle">
+        {% endif %}<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:100%; table-layout:fixed;">
+                  <tr>
+                    <td valign="middle" align="center"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="em_wrapper">
+                        <tbody>
+                          <tr>
+                            <td align="center" valign="middle"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="em_wrapper">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="width: 100%;" class="em_wrapper">
+                                        <tbody>
+                                          <tr>
+                                            <td width="{{ module.styles_1.padding_left }}" style="width: {{ module.styles_1.padding_left }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                            <td valign="middle" align="center" style="vertical-align:middle;"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                  <!--[if mso]>
+                                                  <tr>
+                                                    <td height="{{ module.styles_1.padding_top }}" style="height: {{ module.styles_1.padding_top }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                  </tr>
+                                                  <![endif]-->
+                                                  <!--[if !mso]><!-- -->
+                                                  <tr>
+                                                    <td height="{{ module.styles_1.padding_top }}" style="height: {{ module.styles_1.padding_top }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                  </tr>
+                                                  <!--<![endif]-->
+                                                  <tr>
+                                                    <!--[if mso]>
+                                                      <td valign="bottom" align="{{ module.styles_1.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #000000;">
+                                                    <![endif]-->
+                                                    <!--[if !mso]><!-- -->
+                                                    <td valign="bottom" class="hs_cos_wrapper_type_rich_text" data-hs-cos-type="rich_text" align="{{ module.styles_1.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #000000;">
+                                                      <!--<![endif]-->
+                                                      {{ module.title }}</td>
+                                                  </tr>
+                                                  {% if module.button_link.url.href %}
+                                                  {% set href = module.button_link.url.href %}
+                                                  {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                                                    {% set href = "mailto:" + href %}
+                                                  {% endif %}
+                                                  <tr>
+                                                    <td style="height:20px;font-size:0;" height="20"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <table align="{{ module.styles_1.align_text }}" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0 !important; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:separate!important">
+                                                        <tbody>
+                                                          <tr>
+                                                            <!--[if mso]>
+                                                            <td align="center" valign="middle" bgcolor="{{ module.styles.background_colour.color }}" role="presentation"  valign="middle" style="font-family: Lato, Tahoma, sans-serif;cursor:auto;background-color:{{ module.styles.background_colour.color }};padding:12px 18px;">
+                                                          <![endif]-->
+                                                          <!--[if !mso]><!-- -->
+                                                            <td align="center" valign="middle" bgcolor="{{ module.styles.background_colour.color }}" role="presentation" style="border-collapse:collapse; mso-line-height-rule:exactly; font-family: Lato, Tahoma, sans-serif; font-size:{{ module.styles.text_size }}px; color:{{ module.styles.text_colour.color }}; word-break:break-word; cursor:auto; background-color:{{ module.styles.background_colour.color }};border-radius:10px;">
+                                                         <!--<![endif]-->
+                                                              <a {% if module.button_link.url.type is equalto "CALL_TO_ACTION"  %}
+                                                          href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                                                        {% else %}
+                                                          href="{{ href|escape_url }}"
+                                                        {% endif %} target="_blank" {% if module.button_link.rel %}rel="{{ module.button_link.rel|escape_attr }}"{% endif %} style="color:{{ module.styles.text_colour.color }}; mso-line-height-rule:exactly; font-size:{{ module.styles.text_size }}px; Margin:0; text-transform:none; text-decoration:none!important; padding:12px 18px; display:block;" data-hs-link-id="0">
+                                                                {{ module.button_text }}
+                                                              </a>                                        
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                  {% endif %}
+                                                  {% if module.show_additional_links %}
+                                                  <tr>
+                                                    <td style="height:30px;font-size:0;" height="30"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <!--[if mso]>
+                                                      <center>
+                                                      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center"><tr><td style="color:#fff;font-size:0;">&nbsp;</td><td width="360" align="center" style="text-align:center;">
+                                                      <![endif]-->
+                                                      <div style="width:100%;max-width:360px;margin:0 auto;display:block;text-align:center;">
+                                                        <table role="presentation" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                          <tr>
+                                                            <td valign="top" align="center">
+                                                              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                              <tbody>
+                                                                <tr>
+                                                                  {% if module.link_1 %}
+                                                                  <td style="font-family: Lato, Tahoma, sans-serif;margin:0;" align="center">
+                                                                    {{ module.link_1 }}
+                                                                  </td>
+                                                                  {% endif %}
+                                                                  {% if module.link_2 %}
+                                                                  <td width="20" style="width: 20px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                                  <td style="font-family: Lato, Tahoma, sans-serif;margin:0;" align="center">
+                                                                    {{ module.link_2 }}
+                                                                  </td>
+                                                                  {% endif %}
+                                                                </tr>
+                                                              </tbody>
+                                                            </table></td>
+                                                          </tr>
+                                                        </table>
+                                                      </div>
+                                                      <!--[if mso]>
+                                                      </td><td style="color:#fff;font-size:0;">&nbsp;</td></tr></table>
+                                                      </center>
+                                                      <![endif]-->
+                                                    </td>
+                                                  </tr>
+                                                  {% endif %}
+                                                  <tr>
+                                                    <td height="{{ module.styles_1.padding_bottom }}" style="height: {{ module.styles_1.padding_bottom }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                            </table></td>
+                                            <td width="{{ module.styles_1.padding_right }}" style="width: {{ module.styles_1.padding_right }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>{% if module.background_image.src %}<!--[if gte mso 9]>   
+      </div></v:fill></v:rect><![endif]-->{% endif %}</td>
+    </tr>
+  </tbody>
+</table>

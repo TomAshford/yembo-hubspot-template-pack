@@ -1,0 +1,170 @@
+
+<table width="100%" style="border-collapse: collapse;" align="center" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td style="padding: 0; text-align: center;line-height:18px;border-collapse: collapse;border:1px solid #f0f0f0;background-color:#ffffff;" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" valign="top">
+      {% if module.link.url.href %}
+  {% set href = module.link.url.href %}
+  {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+  {% endif %}
+
+<a {% if module.link.url.type is equalto "CALL_TO_ACTION"  %}
+  href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+{% else %}
+  href="{{ href|escape_url }}"
+{% endif %} target="_blank" style="text-decoration:none!important;">{% endif %}
+      <table width="100%" align="left" style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td style="height:30px;font-size:0;" height="30"></td>
+          </tr>
+          <tr>
+            <td class="hs_padded" style="padding: 0 30px; text-align: center;border-collapse: collapse;" valign="top">
+              <div class="hse-section" style="padding:0;">
+                <!--[if !((mso)|(IE))]><!-- -->
+                <div class="hse-column-container" style="
+                    min-width: 200px;
+                    max-width: 520px;
+                    width: 100%!important;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-collapse: collapse;
+                    border-spacing: 0;">
+                  <!--<![endif]-->
+
+                  <!--[if (mso)|(IE)]>
+                    <div class="hse-column-container" style="min-width:200px;max-width:455px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:collapse;border-spacing:0;overflow:hidden;">
+                    <table align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:455px;" cellpadding="0" cellspacing="0" role="presentation" width="455">
+                    <tr>
+                  <![endif]-->
+
+                  <!--[if (mso)|(IE)]>
+                <td valign="top" style="width:55px;">
+              <![endif]-->
+                  <!--[if gte mso 9]>
+                <table role="presentation" width="55" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:55px">
+              <![endif]-->
+              <div class="hse-column hse-size-2" style="vertical-align:top;width:55px;" width="55">
+                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="
+                    border-spacing: 0 !important;
+                    border-collapse: collapse;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                  ">
+                  <tbody>
+                    <tr>
+                      <td style="
+                          border-collapse: collapse;
+                          mso-line-height-rule: exactly;
+                          word-break: break-word;">
+                          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" valign="top" style="table-layout:auto;vertical-align:top;">
+                            <tbody>
+                              <tr>
+                                <td width="55" height="55" style="width:55px;vertical-align:top;">
+                                  <table align="left" border="0" cellspacing="0" cellpadding="0" valign="top" style="table-layout:auto;vertical-align:top;">
+                                    <tbody>
+                                      {% if module.image_field.src %}
+                                      <tr>
+                                        <td>
+                                            <img src="{{ module.image_field.src }}" width="38" style="display:block;margin:0 auto;border:0;max-width:100%;width:38px;"/>
+                                        </td>
+                                      </tr>
+                                      {% endif %}
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td width="16" style="width:16px" class="em_width_0"></td>
+                              </tr>
+                              <tr>
+                                <td height="15" style="height: 15px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if gte mso 9]></table><![endif]-->
+              <!--[if (mso)|(IE)]></td><![endif]-->
+
+                  <!--[if (mso)|(IE)]>
+                <td valign="top" style="width:400px;">
+              <![endif]-->
+                  <!--[if gte mso 9]>
+                <table role="presentation" width="400" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:400px">
+              <![endif]-->
+              <div class="hse-column hse-size-8">
+                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="
+                    border-spacing: 0 !important;
+                    border-collapse: collapse;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                  ">
+                  <tbody>
+                    <tr>
+                      <td style="
+                          border-collapse: collapse;
+                          mso-line-height-rule: exactly;
+                          word-break: break-word;">
+                          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td valign="middle" align="center" style="font-family: Lato, Tahoma, sans-serif; font-size: 20px; color: #000000; padding: 0;width:100%;">
+                                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td valign="middle" align="center" style="font-family: Lato, Tahoma, sans-serif; font-size: 20px; color: #000000; padding: 0;width:100%;">
+                                          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              <td class="hs_rss_email_entries_table" style="color:#000000;font-family: Lato, Tahoma, sans-serif;margin:0;">
+                                                {{ module.richtext_field }}
+                                              </td>
+                                            </tr>
+                                            {% if module.link.url.href %}
+                                            <tr>
+                                              <td style="height:5px;font-size:0;" height="5"></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="right" style="text-align:right">
+                                                  <a {% if module.link.url.type is equalto "CALL_TO_ACTION"  %}
+                                                      href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                                                    {% else %}
+                                                      href="{{ href|escape_url }}"
+                                                    {% endif %} target="_blank" style="height:25px;mso-line-height-rule:exactly;font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #0A58C7;text-decoration:none;" rel="noopener">
+                                                    >
+                                                </a>
+                                              </td>
+                                            </tr>
+                                            {% endif %}
+                                          </table>
+                                        </td>                                           
+                                      </tr>
+                                    </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if gte mso 9]></table><![endif]-->
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              
+                <!--[if (mso)|(IE)]></tr></table><![endif]-->
+              </div>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="height:30px;font-size:0;" height="30"></td>
+          </tr>
+        </tbody>
+      </table>
+      {% if module.link.url.href %}
+    </a>
+    {% endif %}
+    </td>
+  </tr>
+</table>

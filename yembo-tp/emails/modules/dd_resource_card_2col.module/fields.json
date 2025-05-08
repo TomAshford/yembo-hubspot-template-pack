@@ -1,0 +1,126 @@
+[ {
+  "id" : "a81c230b-724d-c4e0-497f-920b3437ed62",
+  "name" : "link",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://yembo.ai/",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e01b0707-a2be-673f-05dd-e76ff8f77e25",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://placehold.co/225x226.png",
+    "alt" : "card-image",
+    "width" : 225,
+    "height" : 226
+  }
+}, {
+  "id" : "5c2a59a6-18d8-ba6c-5911-5486f7b2188c",
+  "name" : "content_tag",
+  "label" : "Content Tag",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e070faf7-bec7-e1de-1a9c-2453c3417576",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://placehold.co/42x49.png",
+      "alt" : "eguide-tag",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 49
+    }
+  }, {
+    "id" : "086766ad-6fad-af5f-099f-492ed861e066",
+    "name" : "content_tag_text",
+    "label" : "Content Tag Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Blog"
+  }, {
+    "id" : "1ee232d3-60fa-128f-a025-280ecabecfd6",
+    "name" : "content_tag_colour",
+    "label" : "Content Tag Text Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "icon" : {
+      "src" : "https://placehold.co/42x49.png",
+      "alt" : "eguide-tag",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 49
+    },
+    "content_tag_text" : "eGuide",
+    "content_tag_colour" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "40a0db44-a3f9-cac0-1037-7c3965a32b0e",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>"
+}, {
+  "id" : "5d0a575c-cde9-4b5a-624e-7d07cf7c9c13",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn more"
+} ]

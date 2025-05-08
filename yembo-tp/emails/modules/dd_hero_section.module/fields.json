@@ -1,0 +1,117 @@
+[ {
+  "id" : "70018ae0-ec2c-c91b-bc98-208fc881e11f",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "inline_help_text" : "Max width 600 pixels.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://placehold.co/600x285.png",
+    "alt" : "newsletter-hero-bg",
+    "width" : 600,
+    "height" : 285,
+    "size_type" : "exact"
+  }
+}, {
+  "id" : "79c3aeae-05ac-59e1-e36c-6d5df966ab3c",
+  "name" : "edition",
+  "label" : "Edition",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong>August 2024</strong></p>"
+}, {
+  "id" : "cff66248-3a8d-8685-ab40-8285edcbb14d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Welcome, {{ personalization_token('contact.firstname', 'customer') }}, to the Yembo newsletter</p>"
+}, {
+  "id" : "c398ec39-d215-9534-1aca-4cea316035d3",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "734fe28d-7f74-de78-e3c2-a4155d8c9a30",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 49
+  }, {
+    "id" : "f2ecafca-999b-ab95-e245-a50cabacce0c",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 55
+  }, {
+    "id" : "ca7789be-a652-903f-5701-63003e896a1b",
+    "name" : "padding_left",
+    "label" : "Padding Left",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 40,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 40
+  }, {
+    "id" : "a0d453b7-9c51-50b3-5190-04caa1192b25",
+    "name" : "padding_right",
+    "label" : "Padding Right",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 40,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 40
+  }, {
+    "id" : "917c2a5a-b3dd-6a94-e641-60584d94f49c",
+    "name" : "align_text",
+    "label" : "Align text",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "padding_top" : 49,
+    "padding_bottom" : 55,
+    "padding_left" : 40,
+    "padding_right" : 40,
+    "align_text" : "center"
+  }
+} ]

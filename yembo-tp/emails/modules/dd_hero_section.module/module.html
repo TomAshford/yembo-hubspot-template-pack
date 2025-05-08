@@ -1,11 +1,15 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
-      <td width="100%" align="center" valign="middle" height="{{ module.background_image.height|escape_attr }}" style="background-image: url({{ module.background_image.src|escape_url }}); height:{{ module.background_image.height }}px; background-repeat:no-repeat;background-position:center center; background-size:cover; background-color:#ffffff;width:100%;" background="{{ module.background_image.src|escape_url }}" bgcolor="#ffffff"><!--[if gte mso 9]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:{{ module.background_image.height }}px;">
-          <v:fill type="frame" src="{{ module.background_image.src|escape_url }}" color="none" />
-          <v:textbox inset="0,0,0,0">
-        <![endif]--><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+      {% if module.background_image.src %}
+      <td width="100%" align="center" valign="middle" height="{{ module.background_image.height|escape_attr }}" style="background-image: url({{ module.background_image.src|escape_url }}); height:{{ module.background_image.height }}px; background-repeat:no-repeat;background-position:center top; background-size:cover; background-color:#ffffff;width:100%;" background="{{ module.background_image.src|escape_url }}" bgcolor="#ffffff"><!--[if gte mso 9]>
+        <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior: url(#default#VML); display: inline-block; position: absolute; width: 600px; height:{{ module.background_image.height }}px; top: 0; left: 0; border: 0; z-index: 1;" src="{{ module.background_image.src }}" />                             
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="display: inline-block; position: absolute; width: 600px; height: {{ module.background_image.height }}px; top: 0; left: 0; border: 0; z-index: 2;">
+        <v:fill opacity="0%" style="z-index: 1;"/> 
+        <div>                       
+        <![endif]-->{% else %}
+        <td width="100%" align="center" valign="middle">
+        {% endif %}<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
           <tbody>
             <tr>
               <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:100%; table-layout:fixed;">
@@ -21,7 +25,7 @@
                                         <tbody>
                                           <tr>
                                             <td width="{{ module.styles.padding_left }}" style="width: {{ module.styles.padding_left }}px; font-size: 0px; line-height: 0px;">&nbsp;</td>
-                                            <td valign="middle" align="center"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                            <td valign="middle" align="center" style="vertical-align:middle;"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
                                                 <tbody>
                                                   <!--[if mso]>
                                                   <tr>
@@ -35,22 +39,22 @@
                                                   <!--<![endif]-->
                                                   <tr>
                                                     <!--[if mso]>
-                                                      <td valign="bottom" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 27px; font-weight: 400; color: #ffffff;" class="em_defaultlink">
+                                                      <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 18px; line-height: 27px; font-weight: 700; color: #000000;" class="em_defaultlink">
                                                     <![endif]-->
                                                     <!--[if !mso]><!-- -->
-                                                    <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: 'Inter', Arial, sans-serif; font-size: 16px; line-height: 27px; font-weight: 400; color: #ffffff;" class="em_defaultlink">
+                                                    <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 18px; line-height: 27px; font-weight: 700; color: #000000;" class="em_defaultlink">
                                                       <!--<![endif]-->
                                                     {{ module.edition }}</td>
                                                   </tr>
                                                   <tr>
-                                                    <td height="10" style="height: 10px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                                    <td height="20" style="height: 20px; font-size: 0px; line-height: 0px;">&nbsp;</td>
                                                   </tr>
                                                   <tr>
                                                     <!--[if mso]>
-                                                      <td valign="bottom" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #ffffff;" class="em_defaultlink">
+                                                      <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #000000;" class="em_defaultlink">
                                                     <![endif]-->
                                                     <!--[if !mso]><!-- -->
-                                                    <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: 'Inter', Arial, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #ffffff;" class="em_defaultlink text_dark_white">
+                                                    <td valign="bottom" align="{{ module.styles.align_text }}" style="font-family: Lato, Tahoma, sans-serif; font-size: 36px; line-height: 43px; font-weight: bold; color: #000000;" class="em_defaultlink text_dark_white">
                                                       <!--<![endif]-->
                                                     {{ module.title }}</td>
                                                   </tr>
@@ -74,10 +78,8 @@
                 </table></td>
             </tr>
           </tbody>
-        </table><!--[if gte mso 9]>
-          </v:textbox>
-        </v:rect>
-        <![endif]--></td>
+        </table>{% if module.background_image.src %}<!--[if gte mso 9]>   
+      </div></v:fill></v:rect><![endif]-->{% endif %}</td>
     </tr>
   </tbody>
 </table>

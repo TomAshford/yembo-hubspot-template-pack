@@ -1,0 +1,47 @@
+[ {
+  "id" : "e01b0707-a2be-673f-05dd-e76ff8f77e25",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://placehold.co/55x55.png",
+    "alt" : "card-image",
+    "loading" : "lazy",
+    "width" : 38,
+    "height" : 36
+  }
+}, {
+  "id" : "a81c230b-724d-c4e0-497f-920b3437ed62",
+  "name" : "link",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://yembo.ai/",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "40a0db44-a3f9-cac0-1037-7c3965a32b0e",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong>Lorem ipsum dolor sit amet</strong></p>\n<p style=\"font-size: 16px;\">Aliquam ullamcorper mauris sed libero faucibus tempor. Ut auctor, justo non congue tempor</p>"
+} ]

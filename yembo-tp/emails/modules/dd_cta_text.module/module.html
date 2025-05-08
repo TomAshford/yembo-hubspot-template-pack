@@ -1,0 +1,120 @@
+{% if module.transparent_bg %}
+{% set bg_color = "transparent" %}
+{% else %}
+{% set bg_color = module.background_color.color %}
+{% endif %}
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td style="height:{{ module.padding_top }}px;width:100%;background-color:{{ bg_color }};" bgcolor="{{ bg_color }}" height="{{ module.padding_top }}"></td>
+    </tr>
+    <tr>
+      <td width="100%" align="center" valign="bottom" style="background-color:{{ bg_color }};width:100%;" bgcolor="{{ bg_color }}">
+        <table
+          role="presentation"
+          width="100%"
+          cellpadding="0"
+          cellspacing="0"
+          style="
+            border-spacing: 0 !important;
+            border-collapse: collapse;
+            background-color:{{ bg_color }};ms-text-size-adjust: none; mso-line-height-rule: exactly;" bgcolor="{{ bg_color }}"
+        >
+          <tr>
+            {% if module.padding_left > 0 %}
+            <td width="{{ module.padding_left }}" style="width:{{ module.padding_left }}px;"></td>
+            {% endif %}
+            <td>
+              <table
+                role="presentation"
+                width="100%"
+                cellpadding="0"
+                cellspacing="0"
+                style="
+                  border-spacing: 0 !important;
+                  border-collapse: collapse;
+                "
+              >
+              {% if module.content_tag.content_tag_text %}
+              {% if module.content_tag.icon.src %}
+                {% set content_tag_icon = module.content_tag.icon.src %}
+              {% endif %}
+              <tr>
+                <td valign="middle" align="center"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    {% if module.content_tag.icon.src %}
+                    <td align="left" valign="middle" width="23">
+                      <img src="{{ content_tag_icon }}" width="23" style="margin:0;padding:0;display:block;max-width:23px;width:23px;"/>
+                    </td>
+                    <td align="left" width="9" style="width: 9px; line-height: 0px; font-size: 0px;"></td>
+                    {% endif %}
+                    <!--[if mso]>
+                    <td valign="top" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; color: {{ module.content_tag.content_tag_colour.color }};text-decoration:none;">
+                    <![endif]-->
+                    <!--[if !mso]><!-- -->
+                    <td valign="middle" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; color: {{  module.content_tag.content_tag_colour.color }};text-decoration:none;">
+                      <!--<![endif]-->
+                      {{ module.content_tag.content_tag_text }}</td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="14" style="height: 14px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+              </tr>
+              {% endif %}
+              <tr>
+                <td class="hs_rss_email_entries_table" style="font-family: Lato, Tahoma, sans-serif;margin:0;" align="left">
+                  {{ module.text }}
+                </td>
+              </tr>
+              {% if module.button_link.url.href %}
+              {% set href = module.button_link.url.href %}
+              {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+              {% endif %}
+              <tr>
+                <td style="height:25px;font-size:0;" height="25"></td>
+              </tr>
+              <tr>
+                <td>
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0 !important; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:separate!important;background-color:{{ bg_color }};" bgcolor="{{ bg_color }}">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="text-align:center;background-color:{{ bg_color }};" bgcolor="{{ bg_color }}">
+                        <!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" {% if module.button_link.url.type is equalto "CALL_TO_ACTION"  %}
+                      href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                    {% else %}
+                      href="{{ href|escape_url }}"
+                    {% endif %} target="_blank" {% if module.button_link.rel %}rel="{{ module.button_link.rel|escape_attr }}"{% endif %} style="text-decoration: none!important;height:{{ module.styles.button_height }}px;v-text-anchor:middle;width:{{ module.styles.button_width }}px;" arcsize="10%" strokecolor="{{ module.styles.background_colour.color }}" fillcolor="{{ module.styles.background_colour.color }}">
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:Arial, Helvetica, sans-serif;font-size:{{ module.styles.text_size }}px;text-decoration: none!important;">{{ module.button_text }}</center>
+                          </v:roundrect>
+                        <![endif]-->
+                          <a {% if module.button_link.url.type is equalto "CALL_TO_ACTION"  %}
+                          href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                        {% else %}
+                          href="{{ href|escape_url }}"
+                        {% endif %} target="_blank" {% if module.button_link.rel %}rel="{{ module.button_link.rel|escape_attr }}"{% endif %} style="line-height: {{ module.styles.button_height }}px;vertical-align:middle;font-weight: 700; background-color: {{ module.styles.background_colour.color }}; border-radius: 10px; color: #ffffff; display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: {{ module.styles.text_size }}px; width:{{ module.styles.button_width }}px;height:{{ module.styles.button_height }}px; text-align: center; text-decoration: none!important; -webkit-text-size-adjust: none; mso-hide: all;margin:0 auto;display:block;" rel="noopener">
+                            {{ module.button_text }}</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              {% endif %}
+              </table>
+            </td>
+            {% if module.padding_right > 0 %}
+            <td width="{{ module.padding_right }}" style="width:{{ module.padding_right }}px;"></td>
+            {% endif %}
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:{{ module.padding_bottom }}px;background-color:{{ bg_color }};width:100%;" bgcolor="{{ bg_color }}" height="{{ module.padding_bottom }}"></td>
+    </tr>
+  </tbody>
+</table>

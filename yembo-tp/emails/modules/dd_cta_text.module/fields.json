@@ -1,0 +1,269 @@
+[ {
+  "id" : "47d84cfa-7122-36a4-f21d-c25d09e5ef4c",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#0a58c7",
+    "opacity" : 100
+  }
+}, {
+  "id" : "83d684f5-60cd-b28f-f92d-c40597ddf7a2",
+  "name" : "transparent_bg",
+  "label" : "Transparent background",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "79fe13f9-d85a-a5fc-e38b-f6365bd44dfa",
+  "name" : "padding_top",
+  "label" : "Padding Top",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 40
+}, {
+  "id" : "8ab67161-80bb-955d-51c2-ce8ebdd2bfeb",
+  "name" : "padding_bottom",
+  "label" : "Padding Bottom",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 40
+}, {
+  "id" : "73fe13f9-d85a-a5fc-e38b-f6365bd44dfa",
+  "name" : "padding_left",
+  "label" : "Padding Left",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "max" : 40,
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 40
+}, {
+  "id" : "8ab67161-80bb-955d-51c7-ce8ebdd2bfeb",
+  "name" : "padding_right",
+  "label" : "Padding Right",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "max" : 40,
+  "step" : 1,
+  "type" : "number",
+  "display_width" : null,
+  "default" : 40
+}, {
+  "id" : "5c2a59a6-18d8-ba6c-5911-5486f7b2188c",
+  "name" : "content_tag",
+  "label" : "Content Tag",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e070faf7-bec7-e1de-1a9c-2453c3417576",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://placehold.co/42x49.png",
+      "alt" : "eguide-tag",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 49
+    }
+  }, {
+    "id" : "086766ad-6fad-af5f-099f-492ed861e066",
+    "name" : "content_tag_text",
+    "label" : "Content Tag Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "eGuide"
+  }, {
+    "id" : "1ee232d3-60fa-128f-a025-280ecabecfd6",
+    "name" : "content_tag_colour",
+    "label" : "Content Tag Text Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "icon" : {
+      "src" : "https://placehold.co/42x49.png",
+      "alt" : "eguide-tag",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 49
+    },
+    "content_tag_text" : "eGuide",
+    "content_tag_colour" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "08e39f2a-2127-1747-1cd9-add056d59e64",
+  "name" : "text",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"font-size: 24px; line-height: 125%;color: #ffffff;\">Lorem ipsum dolor sit amet</h2><p><span style=\"font-size: 16px;color: #ffffff;\">Aliquam ullamcorper mauris sed libero faucibus tempor. Ut auctor, justo non congue tempor</span></p>"
+}, {
+  "id" : "ccbdb770-f1cc-a4c8-f218-660ee72a67aa",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://yembo.ai/",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "d5d9a1ef-09e8-67f1-ed9d-8f5f09ab4d84",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Learn more"
+}, {
+  "id" : "d3978241-87bb-006f-3e19-2e75e4f1fca8",
+  "name" : "styles",
+  "label" : "Button Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e461b1cc-0599-b84a-ae1f-0cdee8b0346e",
+    "name" : "text_colour",
+    "label" : "Text Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e7b42e82-5236-ead9-857e-7f12e766e64e",
+    "name" : "background_colour",
+    "label" : "Background Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9f810f55-df70-ab60-6ff5-3ca1ac3064f4",
+    "name" : "text_size",
+    "label" : "Text Size",
+    "inline_help_text" : "Size of the text in pixels",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 30,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 16
+  }, {
+    "id" : "9f810f55-df10-ab60-6ff5-3ca1ac3064f4",
+    "name" : "button_width",
+    "label" : "Button Width",
+    "inline_help_text" : "Width of the button in pixels",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 100,
+    "max" : 300,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 174
+  }, {
+    "id" : "9f810f55-df10-ab10-6ff5-3ca1ac3064f4",
+    "name" : "button_height",
+    "label" : "Button Height",
+    "inline_help_text" : "Height of the button in pixels",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 30,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 55
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "text_colour" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "background_colour" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "text_size" : 16,
+    "button_width" : 174,
+    "button_height" : 55
+  }
+} ]

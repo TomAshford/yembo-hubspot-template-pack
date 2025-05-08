@@ -1,0 +1,154 @@
+<table width="100%" style="border-collapse: collapse;" align="center" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td style="padding: 0; text-align: center;line-height:18px;border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0" valign="top">
+      {% if module.link.url.href %}
+  {% set href = module.link.url.href %}
+  {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+  {% endif %}
+
+<a {% if module.link.url.type is equalto "CALL_TO_ACTION"  %}
+  href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+{% else %}
+  href="{{ href|escape_url }}"
+{% endif %} target="_blank" style="text-decoration:none!important;">{% endif %}
+      <table class="column-1-2" width="100%" align="left" style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td style="padding: 0; text-align: center;border-collapse: collapse;" valign="top">
+              <div
+                class="hse-column-container-inner"
+                style="
+                  min-width: 200px;
+                  max-width: 600px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                  width:100%;
+                "
+              >
+                <!--[if (mso)|(IE)]>
+                    <table align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%;" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tr>
+                  <![endif]-->
+
+                <!--[if (mso)|(IE)]>
+                <td valign="top" style="width:260px;">
+              <![endif]-->
+                <!--[if gte mso 9]>
+                <table role="presentation" width="260" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:260px">
+              <![endif]-->
+                <div class="hse-column hse-size-6">
+                  <table width="100%" style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          {% if module.image_field.src %}
+                          <tr>
+                            <td style="width:100%;" width="100%">
+                                <img src="{{ module.image_field.src }}" class="stretch-on-mobile" width="100%" style="display:block;margin:0 auto;border:0;max-width:100%;width:auto;"/>
+                            </td>
+                          </tr>
+                          {% endif %}
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if gte mso 9]></table><![endif]-->
+                <!--[if (mso)|(IE)]></td><![endif]-->
+                <!--[if (mso)|(IE)]>
+                  <td valign="top" style="width:260px;">
+                <![endif]-->
+                <!--[if gte mso 9]>
+                  <table role="presentation" width="260" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:260px">
+                <![endif]-->
+                  <div class="hse-column hse-size-6">
+                    <table width="100%" style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td>
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="text-align:left;background-color:#ffffff;">
+                                  <tr>
+                                    <td style="padding: 25px 23px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        {% if module.content_tag.content_tag_text %}
+                                        {% if module.content_tag.icon.src %}
+                                          {% set content_tag_icon = module.content_tag.icon.src %}
+                                        {% endif %}
+                                        <tr>
+                                          <td valign="middle" align="center"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                              {% if module.content_tag.icon.src %}
+                                              <td align="left" valign="middle" width="23">
+                                                <img src="{{ content_tag_icon }}" width="23" style="margin:0;padding:0;display:block;max-width:23px;width:23px;"/>
+                                              </td>
+                                              <td align="left" width="9" style="width: 9px; line-height: 0px; font-size: 0px;"></td>
+                                              {% endif %}
+                                              <!--[if mso]>
+                                              <td valign="top" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; color: {{ module.content_tag.content_tag_colour.color }};text-decoration:none;">
+                                              <![endif]-->
+                                              <!--[if !mso]><!-- -->
+                                              <td valign="middle" align="left" style="font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; color: {{  module.content_tag.content_tag_colour.color }};text-decoration:none;">
+                                                <!--<![endif]-->
+                                                {{ module.content_tag.content_tag_text }}</td>
+                                            </tr>
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td height="18" style="height: 18px; font-size: 0px; line-height: 0px;">&nbsp;</td>
+                                        </tr>
+                                        {% endif %}
+                                        <tr>
+                                          <td class="hs_rss_email_entries_table hs_cos_wrapper_type_rich_text" data-hs-cos-type="rich_text" style="color:#000000;font-family: Lato, Tahoma, sans-serif;margin:0;">
+                                            {{ module.richtext_field }}
+                                          </td>
+                                        </tr>
+                                        {% if module.link.url.href %}
+                                        <tr>
+                                          <td style="height:16px;font-size:0;" height="16"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left">
+                                            {% set href = module.link.url.href %}
+                                              {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+                                                {% set href = "mailto:" + href %}
+                                              {% endif %}
+                                              <a {% if module.link.url.type is equalto "CALL_TO_ACTION"  %}
+                                                  href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                                                {% else %}
+                                                  href="{{ href|escape_url }}"
+                                                {% endif %} target="_blank" style="height:25px;mso-line-height-rule:exactly;font-family: Lato, Tahoma, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #0A58C7;text-decoration:none;" rel="noopener">
+                                                {{ module.cta_text }} >
+                                              </a>
+                                          </td>
+                                        </tr>
+                                        {% endif %}
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if gte mso 9]></table><![endif]-->
+                <!--[if (mso)|(IE)]></td><![endif]-->
+                <!--[if (mso)|(IE)]></tr></table><![endif]-->
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      {% if module.link.url.href %}
+    </a>
+    {% endif %}
+    </td>
+  </tr>
+</table>

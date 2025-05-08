@@ -1,0 +1,243 @@
+[ {
+  "id" : "70018ae0-ec2c-c91b-bc98-208fc881e11f",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "inline_help_text" : "Max width 600 pixels.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://placehold.co/600x290.png",
+    "alt" : "newsletter-cta-bg",
+    "width" : 600,
+    "height" : 290,
+    "size_type" : "exact"
+  }
+}, {
+  "id" : "cff66248-3a8d-8685-ab40-8285edcbb14d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2 style=\"font-size:60px;line-height:1.15;\">How can we help?</h2>"
+}, {
+  "id" : "ccbdb770-f1cc-a4c8-f218-660ee72a67aa",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://yembo.ai/",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "d5d9a1ef-09e8-67f1-ed9d-8f5f09ab4d84",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Learn more"
+}, {
+  "id" : "83d684f5-60dd-b28f-f92d-c40597ddf7a2",
+  "name" : "show_additional_links",
+  "label" : "Show additional links",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "cff66248-3a8d-8685-ab22-8285edcbb14d",
+  "name" : "link_1",
+  "label" : "Link 1",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "show_additional_links",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong><a href=\"https://yembo.ai/contact-us\" target=\"_blank\" style=\"color:#000000;\">Contact us</a></strong></p>"
+}, {
+  "id" : "cff66233-3a8d-8685-ab22-8285edcbb14d",
+  "name" : "link_2",
+  "label" : "Link 2",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "show_additional_links",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p><strong><a href=\"https://yembo.ai/contact-us\" target=\"_blank\" style=\"color:#000000;\">Contact us</a></strong></p>"
+}, {
+  "id" : "d3978241-87bb-006f-3e19-2e75e4f1fca8",
+  "name" : "styles",
+  "label" : "Button Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e461b1cc-0599-b84a-ae1f-0cdee8b0346e",
+    "name" : "text_colour",
+    "label" : "Text Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e7b42e82-5236-ead9-857e-7f12e766e64e",
+    "name" : "background_colour",
+    "label" : "Background Colour",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9f810f55-df70-ab60-6ff5-3ca1ac3064f4",
+    "name" : "text_size",
+    "label" : "Text Size",
+    "inline_help_text" : "Size of the text in pixels",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 30,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 16
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "text_colour" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "background_colour" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "text_size" : 16
+  }
+}, {
+  "id" : "c398ec39-d215-9534-1aca-4cea316035d3",
+  "name" : "styles_1",
+  "label" : "Box Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "734fe28d-7f74-de78-e3c2-a4155d8c9a30",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 57
+  }, {
+    "id" : "f2ecafca-999b-ab95-e245-a50cabacce0c",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 55
+  }, {
+    "id" : "ca7789be-a652-903f-5701-63003e896a1b",
+    "name" : "padding_left",
+    "label" : "Padding Left",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 40,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 40
+  }, {
+    "id" : "a0d453b7-9c51-50b3-5190-04caa1192b25",
+    "name" : "padding_right",
+    "label" : "Padding Right",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 40,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 40
+  }, {
+    "id" : "917c2a5a-b3dd-6a94-e641-60584d94f49c",
+    "name" : "align_text",
+    "label" : "Align text",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "center"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "padding_top" : 57,
+    "padding_bottom" : 55,
+    "padding_left" : 40,
+    "padding_right" : 40,
+    "align_text" : "center"
+  }
+} ]

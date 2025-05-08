@@ -60,12 +60,12 @@
                                           <tbody>
                                             {% if module.image.src %}
                                             <tr>
-                                              <td width="100%" align="center" valign="middle" role="presentation" style="width:100%;border-collapse:collapse; mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:10px;">
+                                              <td width="100%" align="center" valign="middle" role="presentation" style="width:100%;border-collapse:collapse; mso-line-height-rule:exactly; font-family: Lato, Tahoma, sans-serif; font-size:10px;">
                                                 {% if module.content_link.href %}
                                                 <a href="{{ module.content_link.href }}" target="_blank" style="text-decoration: none;">{% endif %}
                                                   <!--[if mso 16]> <v:image src="{{ module.image.src }}" style="position:relative;top:{{ windows_top }}px;left:{{ windows_left }}px;width:{{ image_width }}px;height:{{ image_height }}px"> </v:image><![endif]-->
                                                     <!--[if !mso 16]><!-- -->
-                                                  <img src="{{ module.image.src }}?noresize" alt="{{ module.image.alt }}" {{ sizeAttrs }} width="{{ image_width }}" border="0" style="font-family: Arial, sans-serif; font-size: 20px; line-height: 25px; color: #000000; max-width: 100%; display: block;" />
+                                                  <img src="{{ module.image.src }}?noresize" alt="{{ module.image.alt }}" {{ sizeAttrs }} width="{{ image_width }}" border="0" style="font-family: Lato, Tahoma, sans-serif; font-size: 20px; line-height: 25px; color: #000000; max-width: 100%; display: block;" />
                                                   <!--<![endif]-->
                                                 {% if module.content_link.href %}</a>{% endif %}                         
                                               </td>

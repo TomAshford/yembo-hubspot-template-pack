@@ -39,6 +39,9 @@ a.cardLink{
     .resourceCard__header img{
       transform: scale(1.05);
     }
+    .text-button {
+      margin-right:12px;
+    }
   }
 
   &__header{
@@ -91,6 +94,9 @@ a.cardLink{
   }
   &__text {
     margin-bottom: 15px;
+  }
+  .text-button {
+    @include transition;
   }
 
 }

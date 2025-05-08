@@ -3,5 +3,6 @@
   "content_types" : [ "EMAIL" ],
   "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
   "module_id" : 178173088874,
+  "label" : "Yembo - icon-card",
   "is_available_for_new_content" : true
 }

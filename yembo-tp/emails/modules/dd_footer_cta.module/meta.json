@@ -3,5 +3,6 @@
   "content_types" : [ "EMAIL" ],
   "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
   "module_id" : 178264167090,
+  "label" : "Yembo - large text cta",
   "is_available_for_new_content" : true
 }

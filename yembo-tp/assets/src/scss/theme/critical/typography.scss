@@ -93,6 +93,12 @@ blockquote{
   @include media-breakpoint-up-lg{
     font-size: 1.875rem;
   }
+  & > p {
+    font-size: 1.5rem;
+    @include media-breakpoint-up-lg{
+      font-size: 1.875rem;
+    }
+  }
   &.display--1 {
     font-size: 1.125rem;
     @include media-breakpoint-up-lg{

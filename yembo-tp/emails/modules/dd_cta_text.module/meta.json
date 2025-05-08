@@ -3,5 +3,6 @@
   "content_types" : [ "EMAIL" ],
   "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
   "module_id" : 178189198730,
+  "label" : "Yembo - text-block with padding & bg color",
   "is_available_for_new_content" : true
 }

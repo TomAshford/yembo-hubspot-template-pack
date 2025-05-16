@@ -1,7 +1,8 @@
 {
   "global" : false,
+  "content_types" : [ "EMAIL" ],
   "host_template_types" : [ "EMAIL" ],
-  "module_id" : 75688910687,
+  "module_id" : 189508146569,
   "label" : "Yembo - email-hero-image",
   "is_available_for_new_content" : true
 }

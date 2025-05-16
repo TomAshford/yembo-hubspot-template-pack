@@ -1,7 +1,6 @@
 [ {
   "id" : "70018ae0-ec2c-c91b-bc98-208fc881e11f",
   "name" : "background_image",
-  "display_width" : null,
   "label" : "Background Image",
   "inline_help_text" : "Max width 600 pixels.",
   "required" : false,
@@ -10,6 +9,7 @@
   "resizable" : true,
   "show_loading" : false,
   "type" : "image",
+  "display_width" : null,
   "default" : {
     "src" : "https://yembo.ai/hubfs/yembo-tp/newsletter-hero.jpg",
     "alt" : "small_hero_bg",
@@ -21,7 +21,6 @@
 }, {
   "id" : "e3c60464-e86b-276e-115a-7945043f1b67",
   "name" : "content_tag_text",
-  "display_width" : null,
   "label" : "Source Tag text",
   "required" : false,
   "locked" : false,
@@ -29,20 +28,20 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
+  "display_width" : null,
   "default" : "-  Yembo user  -"
 }, {
   "id" : "c7d71827-f007-0d5f-7641-1ef15623a6c7",
   "name" : "title",
-  "display_width" : null,
   "label" : "Quote",
   "required" : false,
   "locked" : false,
   "type" : "richtext",
+  "display_width" : null,
   "default" : "“This is impressive. I haven’t seen anything like this before.”"
 }, {
   "id" : "b92fd91d-2eab-9b76-ac6e-3c1b5fe2e785",
   "name" : "content_url",
-  "display_width" : null,
   "label" : "Content URL",
   "required" : false,
   "locked" : false,
@@ -50,14 +49,15 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
+  "display_width" : null,
   "default" : "https://yembo.ai/"
 }, {
   "id" : "e3c60266-e76b-276e-115a-7945043f1b67",
   "name" : "cta_text1",
-  "display_width" : null,
   "label" : "cta_text1",
   "required" : false,
   "locked" : false,
   "type" : "richtext",
+  "display_width" : null,
   "default" : "See more customer stories"
 } ]

@@ -1,7 +1,8 @@
 {
   "global" : false,
+  "content_types" : [ "EMAIL" ],
   "host_template_types" : [ "EMAIL" ],
-  "module_id" : 75795072131,
+  "module_id" : 189505082117,
   "label" : "Yembo - email-cards",
   "is_available_for_new_content" : true
 }

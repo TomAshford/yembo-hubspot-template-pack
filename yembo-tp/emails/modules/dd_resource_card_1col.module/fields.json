@@ -114,7 +114,6 @@
 }, {
   "id" : "5d0a575c-cde9-4b5a-624e-7d07cf7c9c14",
   "name" : "cta_text",
-  "display_width" : null,
   "label" : "CTA Text",
   "required" : false,
   "locked" : false,
@@ -122,5 +121,6 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
+  "display_width" : null,
   "default" : "Learn more"
 } ]

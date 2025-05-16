@@ -24,15 +24,15 @@
         "type" : "custom_widget",
         "params" : {
           "css_class" : "",
-          "css_id" : "",
-          "css_id_str" : "",
-          "css_style" : "",
-          "overrideable" : true,
+          "schema_version" : 2,
           "path" : "/yembo-tp/modules/lp_header",
           "per_widget_wrapper_html" : "",
-          "schema_version" : 2,
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
           "widget_name" : "lp_header",
-          "wrapping_html" : ""
+          "css_id_str" : "",
+          "overrideable" : true
         },
         "rows" : [ ],
         "rowMetaData" : [ ],
@@ -69,12 +69,12 @@
         "type" : "cell",
         "params" : {
           "css_class" : "lpTemplate__flex",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "<main class=\"lpTemplate__inner container\">{{ html }}</main>",
           "css_id" : "",
           "css_id_str" : "",
-          "css_style" : "",
-          "overrideable" : false,
-          "per_widget_wrapper_html" : "",
-          "wrapping_html" : "<main class=\"lpTemplate__inner container\">{{ html }}</main>"
+          "overrideable" : false
         },
         "rows" : [ {
           "0" : {
@@ -85,12 +85,12 @@
             "type" : "cell",
             "params" : {
               "css_class" : "lpTemplate__left",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
               "css_id" : "",
               "css_id_str" : "",
-              "css_style" : "",
-              "overrideable" : false,
-              "per_widget_wrapper_html" : "",
-              "wrapping_html" : ""
+              "overrideable" : false
             },
             "rows" : [ {
               "0" : {
@@ -101,12 +101,12 @@
                 "type" : "widget_container",
                 "params" : {
                   "css_class" : "",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "<section class=\"landingPage panel--left\">{{ html }}</section>",
                   "css_id" : "",
                   "css_id_str" : "",
-                  "css_style" : "",
-                  "overrideable" : false,
-                  "per_widget_wrapper_html" : "",
-                  "wrapping_html" : "<section class=\"landingPage panel--left\">{{ html }}</section>"
+                  "overrideable" : false
                 },
                 "rows" : [ ],
                 "rowMetaData" : [ ],
@@ -122,18 +122,18 @@
                   "label" : "Text",
                   "type" : "custom_widget",
                   "params" : {
-                    "content_type" : "Whitepaper",
                     "css_class" : "",
-                    "css_id" : "",
-                    "css_id_str" : "",
-                    "css_style" : "",
-                    "overrideable" : true,
+                    "schema_version" : 2,
                     "path" : "/yembo-tp/modules/lp_text",
                     "per_widget_wrapper_html" : "",
-                    "schema_version" : 2,
+                    "content_type" : "Whitepaper",
+                    "css_style" : "",
                     "text" : "<h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>",
+                    "wrapping_html" : "",
+                    "css_id" : "",
                     "widget_name" : "lp_text",
-                    "wrapping_html" : ""
+                    "css_id_str" : "",
+                    "overrideable" : true
                   },
                   "rows" : [ ],
                   "rowMetaData" : [ ],
@@ -151,21 +151,21 @@
                   "type" : "custom_widget",
                   "params" : {
                     "css_class" : "",
-                    "css_id" : "",
-                    "css_id_str" : "",
-                    "css_style" : "",
+                    "schema_version" : 2,
                     "image" : {
                       "alt" : "lp-placeholder",
                       "loading" : "lazy",
                       "size_type" : "auto",
                       "src" : "https://yembo.ai/hubfs/Yembo_April2023/video/61ba02e401639b85b0abf41d_move-staff.jpg"
                     },
-                    "overrideable" : true,
                     "path" : "/yembo-tp/modules/lp_image",
                     "per_widget_wrapper_html" : "",
-                    "schema_version" : 2,
+                    "css_style" : "",
+                    "wrapping_html" : "",
+                    "css_id" : "",
                     "widget_name" : "lp_image",
-                    "wrapping_html" : ""
+                    "css_id_str" : "",
+                    "overrideable" : true
                   },
                   "rows" : [ ],
                   "rowMetaData" : [ ],
@@ -182,18 +182,18 @@
                   "label" : "Text",
                   "type" : "custom_widget",
                   "params" : {
-                    "content_type" : "",
                     "css_class" : "",
-                    "css_id" : "",
-                    "css_id_str" : "",
-                    "css_style" : "",
-                    "overrideable" : true,
+                    "schema_version" : 2,
                     "path" : "/yembo-tp/modules/lp_text",
                     "per_widget_wrapper_html" : "",
-                    "schema_version" : 2,
+                    "content_type" : "",
+                    "css_style" : "",
                     "text" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex quam, sagittis vitae dolor quis, accumsan consectetur mauris. Aenean interdum semper porttitor. Quisque sed varius mauris, non suscipit urna.</p>\n<ul>\n<li>Morbi eleifend velit quis ligula euismod, eu ultricies turpis lobortis.</li>\n<li>Mauris dapibus, justo fringilla vehicula sollicitudin</li>\n<li>Urna felis sollicitudin orci, a dignissim tellus sem in sem.</li>\n</ul>\n<p>Aliquam aliquet mollis ultrices. Sed pellentesque est ornare ex faucibus ultrices. Etiam dapibus ligula sed nisi vestibulum, ut dignissim nunc ultrices. Duis maximus diam quis lorem rutrum luctus.</p>",
+                    "wrapping_html" : "",
+                    "css_id" : "",
                     "widget_name" : "lp_text",
-                    "wrapping_html" : ""
+                    "css_id_str" : "",
+                    "overrideable" : true
                   },
                   "rows" : [ ],
                   "rowMetaData" : [ ],
@@ -223,12 +223,12 @@
             "type" : "cell",
             "params" : {
               "css_class" : "lpTemplate__right",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
               "css_id" : "",
               "css_id_str" : "",
-              "css_style" : "",
-              "overrideable" : false,
-              "per_widget_wrapper_html" : "",
-              "wrapping_html" : ""
+              "overrideable" : false
             },
             "rows" : [ {
               "0" : {
@@ -239,15 +239,15 @@
                 "type" : "custom_widget",
                 "params" : {
                   "css_class" : "",
-                  "css_id" : "",
-                  "css_id_str" : "",
-                  "css_style" : "",
-                  "overrideable" : true,
+                  "schema_version" : 2,
                   "path" : "/yembo-tp/modules/lp_form",
                   "per_widget_wrapper_html" : "",
-                  "schema_version" : 2,
+                  "css_style" : "",
+                  "wrapping_html" : "<section class=\"landingPage panel--right\">{{ html }}</section>",
+                  "css_id" : "",
                   "widget_name" : "lp_form",
-                  "wrapping_html" : "<section class=\"landingPage panel--right\">{{ html }}</section>"
+                  "css_id_str" : "",
+                  "overrideable" : true
                 },
                 "rows" : [ ],
                 "rowMetaData" : [ ],
@@ -285,12 +285,12 @@
         "type" : "cell",
         "params" : {
           "css_class" : "lpTemplate__bottom",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
           "css_id" : "",
           "css_id_str" : "",
-          "css_style" : "",
-          "overrideable" : false,
-          "per_widget_wrapper_html" : "",
-          "wrapping_html" : ""
+          "overrideable" : false
         },
         "rows" : [ {
           "0" : {
@@ -301,11 +301,11 @@
             "type" : "widget_container",
             "params" : {
               "css_class" : "",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
               "css_id" : "",
               "css_id_str" : "",
-              "css_style" : "",
-              "per_widget_wrapper_html" : "",
-              "wrapping_html" : "",
               "overrideable" : false
             },
             "rows" : [ ],
@@ -323,15 +323,15 @@
               "type" : "custom_widget",
               "params" : {
                 "css_class" : "",
-                "css_id" : "",
-                "css_id_str" : "",
-                "css_style" : "",
-                "overrideable" : true,
+                "schema_version" : 2,
                 "path" : "/yembo-tp/modules/lp_quote",
                 "per_widget_wrapper_html" : "",
-                "schema_version" : 2,
+                "css_style" : "",
+                "wrapping_html" : "",
+                "css_id" : "",
                 "widget_name" : "lp_quote",
-                "wrapping_html" : ""
+                "css_id_str" : "",
+                "overrideable" : true
               },
               "rows" : [ ],
               "rowMetaData" : [ ],
@@ -378,15 +378,15 @@
         "type" : "custom_widget",
         "params" : {
           "css_class" : "",
-          "css_id" : "",
-          "css_id_str" : "",
-          "css_style" : "",
-          "overrideable" : true,
+          "schema_version" : 2,
           "path" : "/yembo-tp/modules/lp_footer",
           "per_widget_wrapper_html" : "",
-          "schema_version" : 2,
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
           "widget_name" : "lp_footer",
-          "wrapping_html" : ""
+          "css_id_str" : "",
+          "overrideable" : true
         },
         "rows" : [ ],
         "rowMetaData" : [ ],

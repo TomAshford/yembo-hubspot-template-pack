@@ -1,7 +1,6 @@
 [ {
   "id" : "589e2e11-8e56-5fc2-7f66-ae4563345483",
   "name" : "author_name",
-  "display_width" : null,
   "label" : "Name",
   "required" : false,
   "locked" : false,
@@ -9,11 +8,11 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
+  "display_width" : null,
   "default" : "Sid Mohan"
 }, {
   "id" : "589e2e22-8e56-5fc2-7f66-ae4563345483",
   "name" : "author_info",
-  "display_width" : null,
   "label" : "Info",
   "required" : false,
   "locked" : false,
@@ -21,11 +20,11 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
+  "display_width" : null,
   "default" : "Founder & CEO, Yembo"
 }, {
   "id" : "5a34421e-9eee-4d6f-77af-4da7903e25cb",
   "name" : "author_image",
-  "display_width" : null,
   "label" : "Author Image",
   "required" : false,
   "locked" : false,
@@ -33,6 +32,7 @@
   "resizable" : true,
   "show_loading" : false,
   "type" : "image",
+  "display_width" : null,
   "default" : {
     "src" : "https://yembo.ai/hubfs/yembo-tp/sid-mohan.png",
     "alt" : "author",
@@ -41,13 +41,15 @@
     "height" : 50
   }
 }, {
+  "id" : "text_color",
   "name" : "text_color",
   "label" : "Text color",
   "required" : false,
   "locked" : false,
   "type" : "color",
+  "display_width" : null,
   "default" : {
-     "color" : "#0B111D",
-     "opacity" : 100
+    "color" : "#0B111D",
+    "opacity" : 100
   }
 } ]

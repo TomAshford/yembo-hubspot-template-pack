@@ -1,12 +1,12 @@
 [ {
   "id" : "8edd5c03-b9bc-377c-1418-b2d5333bf73a",
   "name" : "content_link",
-  "display_width" : null,
   "label" : "Content Link",
   "required" : false,
   "locked" : false,
   "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
   "type" : "url",
+  "display_width" : null,
   "default" : {
     "type" : "EXTERNAL",
     "href" : "https://yembo.ai/",
@@ -15,7 +15,6 @@
 }, {
   "id" : "cbd7abe4-4b93-46ed-e0b5-656eda5ec251",
   "name" : "image",
-  "display_width" : null,
   "label" : "Image",
   "required" : false,
   "locked" : false,
@@ -23,6 +22,7 @@
   "resizable" : false,
   "show_loading" : false,
   "type" : "image",
+  "display_width" : null,
   "default" : {
     "src" : "https://yembo.ai/hubfs/yembo-tp/email-image.jpg",
     "alt" : "email-hero-image",
@@ -30,49 +30,55 @@
     "height" : 320
   }
 }, {
+  "id" : "image_max",
   "name" : "image_max",
   "label" : "Image max width",
   "required" : false,
   "locked" : false,
   "display" : "slider",
+  "placeholder" : "50",
   "min" : 50,
   "max" : 600,
   "step" : 1,
-  "type" : "number",
-  "prefix": "",
+  "prefix" : "",
   "suffix" : "",
-  "default" : 368,
-  "placeholder": "50"
+  "type" : "number",
+  "display_width" : null,
+  "default" : 368
 }, {
+  "id" : "plain_background",
   "name" : "plain_background",
   "label" : "Plain background",
+  "inline_help_text" : "Remove half & half background and choose a plain background colour.",
   "required" : false,
   "locked" : false,
+  "display" : "checkbox",
   "type" : "boolean",
-  "display":"checkbox",
-  "inline_help_text" : "Remove half & half background and choose a plain background colour.",
+  "display_width" : null,
   "default" : false
 }, {
+  "id" : "bg_color",
   "name" : "bg_color",
   "label" : "Background color",
   "required" : false,
   "locked" : false,
-  "type" : "color",
   "visibility" : {
+    "controlling_field" : null,
     "controlling_field_path" : "plain_background",
     "controlling_value_regex" : "true",
+    "property" : null,
     "operator" : "EQUAL",
-    "access" : null,
-    "hidden_subfields" : null
+    "access" : null
   },
+  "type" : "color",
+  "display_width" : null,
   "default" : {
-     "color" : "#0B111D",
-     "opacity" : 100
+    "color" : "#0B111D",
+    "opacity" : 100
   }
 }, {
   "id" : "70018ae0-ec2c-c91b-bc98-208fc881e11f",
   "name" : "bg_pattern",
-  "display_width" : null,
   "label" : "Background Pattern",
   "inline_help_text" : "Max width 600 pixels.",
   "required" : false,
@@ -81,6 +87,7 @@
   "resizable" : true,
   "show_loading" : false,
   "type" : "image",
+  "display_width" : null,
   "default" : {
     "src" : "https://yembo.ai/hubfs/yembo-tp/email-bg-black-blue.jpg",
     "alt" : "small_hero_bg",
@@ -89,4 +96,4 @@
     "height" : 370,
     "size_type" : "exact"
   }
-}  ]
+} ]

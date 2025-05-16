@@ -44,8 +44,7 @@
         "type" : "number",
         "display_width" : null,
         "default" : 100
-      },
-      { 
+      }, {
         "id" : "a3945712-826f-a422-9cda-3e06f902ccc1",
         "name" : "margin_top",
         "label" : "Margin Top",
@@ -117,8 +116,7 @@
         "type" : "number",
         "display_width" : null,
         "default" : 60
-      },
-      { 
+      }, {
         "id" : "a3945712-826f-a422-9cda-3e06f902ccc2",
         "name" : "margin_top",
         "label" : "Margin Top",
@@ -191,8 +189,7 @@
         "type" : "number",
         "display_width" : null,
         "default" : 80
-      },
-      { 
+      }, {
         "id" : "a3945712-826f-a422-9cda-3e06f902ccc3",
         "name" : "margin_top",
         "label" : "Margin Top",
@@ -266,8 +263,7 @@
         "type" : "number",
         "display_width" : null,
         "default" : 100
-      },
-      { 
+      }, {
         "id" : "a3945712-826f-a422-9cda-3e06f902ccc4",
         "name" : "margin_top",
         "label" : "Margin Top",

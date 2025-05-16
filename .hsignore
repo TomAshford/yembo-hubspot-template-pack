@@ -1,4 +1,5 @@
 *.scss
+*.module copy
 *.map
 /yembo-tp/assets/src/**
 /yembo-tp/assets/build/css/style.css.map

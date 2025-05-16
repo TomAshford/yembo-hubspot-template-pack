@@ -1,20 +1,22 @@
 if (document.readyState !== 'loading') {
-    typVideo();
+    lpVideo();
 } else {
     document.addEventListener("DOMContentLoaded", function() {
-        typVideo();
+        lpVideo();
     });
 }
 
-function typVideo() {
+
+function lpVideo() {
+    console.log("hello");
     const iframeContainers = document.querySelectorAll('.iframe_wrapper--embed');
     const videoContainers = document.querySelectorAll('.iframe_wrapper--local');
-    const ctrlVideo = document.getElementById('typVid');
+    const ctrlVideo = document.getElementById('lpVideoVid');
 
     // Function to add click event listener to iframe containers
     function addIframeClickEvent(container) {
         container.addEventListener("click", function () {
-            var playButton = document.querySelector('.typVideo__video__play');
+            var playButton = document.querySelector('.lpVideo__video__play');
             
             var iframe = container.querySelector('iframe');
             var iframeSrc = iframe.getAttribute('src');
@@ -29,7 +31,7 @@ function typVideo() {
 
     // Function to toggle video playback and controls
     function toggleVideoPlayback() {
-        var playButton = document.querySelector('.typVideo__video__play');
+        var playButton = document.querySelector('.lpVideo__video__play');
     
         if (playButton.classList.contains("active")) {
             ctrlVideo.setAttribute('controls', 0);
@@ -49,14 +51,13 @@ function typVideo() {
         });
     }
 
-
     // Add click event listener to video play buttons if video containers exist
     if (videoContainers.length > 0) {
-        var playButton = document.querySelector('.typVideo__video__play');
+        var playButton = document.querySelector('.lpVideo__video__play');
         playButton.addEventListener("click", function (e) {
             e.preventDefault();
             toggleVideoPlayback();
+            
         });
     }
-
-};
+}

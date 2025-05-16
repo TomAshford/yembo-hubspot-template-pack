@@ -1,4 +1,4 @@
-<div class="typVideo">
+<div class="typVideo" id="{{ name }}">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
@@ -225,7 +225,7 @@
               }
 
               .embed_container {
-                display: inline-block;
+                display: block;
                 height: 100%;
                 position: relative;
                 width: 100%;
@@ -307,7 +307,7 @@
             {% if module.video_url.type == "EXTERNAL" %}
             <div id="embed_container" class="embed_container">
               <div class="iframe_wrapper iframe_wrapper--local">
-                  <video id="typVid" width="320" height="240">
+                  <video id="typVid" width="320" height="240" poster="{{ module.image.src}}">
                     <source src="{{ module.video_url.href }}" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -317,7 +317,7 @@
             {% else %}
             <div id="embed_container" class="embed_container embed_container">
               <div class="iframe_wrapper iframe_wrapper--local">
-                <video id="typVid" width="320" height="240">
+                <video id="typVid" width="320" height="240" poster="{{ module.image.src}}">
                   <source src="{{ module.video_url.href }}" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -336,7 +336,7 @@
             }
 
             .embed_container {
-              display: inline-block;
+              display: block;
               height: 100%;
               position: relative;
               width: 100%;

@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
+if (document.readyState !== 'loading') {
+    typVideo();
+} else {
+    document.addEventListener("DOMContentLoaded", function() {
+        typVideo();
+    });
+}
+
+function typVideo() {
     const iframeContainers = document.querySelectorAll('.iframe_wrapper--embed');
     const videoContainers = document.querySelectorAll('.iframe_wrapper--local');
     const ctrlVideo = document.getElementById('typVid');
@@ -51,4 +59,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-});
+};
